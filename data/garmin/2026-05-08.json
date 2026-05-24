@@ -45,5 +45,11 @@
     "intensity_min_vigorous": 0,
     "vo2_max": null
   },
-  "activities": []
+  "activities": [],
+  "signoff": {
+    "detected": "23:02",
+    "detected_iso": "2026-05-07T23:02:16.294545+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  }
 }

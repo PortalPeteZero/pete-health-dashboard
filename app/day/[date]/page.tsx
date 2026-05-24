@@ -16,6 +16,7 @@ import { DailyStatsCard } from "@/components/daily-stats-card";
 import { ActivityList } from "@/components/activity-list";
 import { MarkdownPanel } from "@/components/markdown-panel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Moon } from "lucide-react";
 
 export const dynamicParams = false;
 
@@ -64,15 +65,27 @@ export default async function DayPage({
         options={options}
         currentValue={date}
       />
-      <div>
-        <h1 className="text-2xl font-bold">{prettyDate(date)}</h1>
-        {day.signoff && (day.signoff.confirmed || day.signoff.detected) && (
-          <p className="text-sm text-muted-foreground">
-            Signed off {day.signoff.confirmed ? "" : "~"}
-            {day.signoff.confirmed || day.signoff.detected} last night
-          </p>
-        )}
-      </div>
+      <h1 className="text-2xl font-bold">{prettyDate(date)}</h1>
+
+      {day.signoff && (day.signoff.confirmed || day.signoff.detected) && (
+        <div className="flex items-center gap-3 rounded-xl border bg-muted/40 px-4 py-3">
+          <Moon className="h-5 w-5 shrink-0 text-muted-foreground" />
+          <div className="flex-1">
+            <div className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+              Last night
+            </div>
+            <div className="text-base font-semibold">
+              Signed off {day.signoff.confirmed ? "" : "~"}
+              {day.signoff.confirmed || day.signoff.detected}
+              {!day.signoff.confirmed && (
+                <span className="ml-2 text-xs font-normal text-muted-foreground">
+                  estimate
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <SleepCard day={day} />

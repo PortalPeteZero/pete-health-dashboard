@@ -68,5 +68,11 @@
       "calories": 269.0,
       "elevation_gain_m": null
     }
-  ]
+  ],
+  "signoff": {
+    "detected": "23:24",
+    "detected_iso": "2026-05-08T23:24:55.298733+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  }
 }
