@@ -1,13 +1,28 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
 import { NavTabs } from "@/components/nav-tabs";
+import { ServiceWorkerRegistrar } from "@/components/sw-register";
 import { getLatestDate, getLatestWeek, getLatestMonth } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Pete · Health",
   description: "Personal health + fitness dashboard.",
   robots: { index: false, follow: false },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Health",
+  },
+  other: {
+    // Legacy iOS standalone flag (Next emits the newer "mobile-web-app-capable";
+    // older iOS only honours the apple-prefixed name).
+    "apple-mobile-web-app-capable": "yes",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({
@@ -31,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="flex min-h-full flex-col bg-background text-foreground">
+        <ServiceWorkerRegistrar />
         <header className="sticky top-0 z-10 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <div className="mx-auto flex w-full max-w-5xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
             <Link href={`/day/${latest}`} className="text-base font-bold">
