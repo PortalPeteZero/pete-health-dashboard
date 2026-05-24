@@ -64,7 +64,15 @@ export default async function DayPage({
         options={options}
         currentValue={date}
       />
-      <h1 className="text-2xl font-bold">{prettyDate(date)}</h1>
+      <div>
+        <h1 className="text-2xl font-bold">{prettyDate(date)}</h1>
+        {day.signoff && (day.signoff.confirmed || day.signoff.detected) && (
+          <p className="text-sm text-muted-foreground">
+            Signed off {day.signoff.confirmed ? "" : "~"}
+            {day.signoff.confirmed || day.signoff.detected} last night
+          </p>
+        )}
+      </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <SleepCard day={day} />

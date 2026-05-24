@@ -22,6 +22,12 @@ export interface GarminDay {
   day_of_week: string;
   recovery_query_date: string;
   journal: JournalEntry | null;
+  signoff?: {
+    detected: string | null;
+    detected_iso: string | null;
+    confirmed: string | null;
+    source: string;
+  } | null;
   sleep: {
     score: number | null;
     qualifier: string | null;
