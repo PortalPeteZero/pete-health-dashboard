@@ -98,7 +98,7 @@ export default async function DayPage({
         <TrainingReadinessGauge
           score={day.training_readiness.score}
           level={day.training_readiness.level}
-          feedback={day.training_readiness.feedback_long}
+          feedback={day.training_readiness.feedback_short}
         />
         <BodyBatteryCard day={day} />
         <div className="md:col-span-2">

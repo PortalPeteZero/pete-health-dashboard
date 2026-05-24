@@ -22,6 +22,11 @@ function color(level: string | null): string {
   }
 }
 
+function humanize(code: string): string {
+  const t = code.replace(/_/g, " ").toLowerCase();
+  return t.charAt(0).toUpperCase() + t.slice(1);
+}
+
 export function TrainingReadinessGauge({
   score,
   level,
@@ -68,9 +73,9 @@ export function TrainingReadinessGauge({
                 </span>
               </div>
             </div>
-            {feedback && (
-              <p className="text-xs leading-relaxed text-muted-foreground">
-                {feedback.replace(/_/g, " ").toLowerCase()}
+            {feedback && feedback !== "UNKNOWN" && (
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {humanize(feedback)}
               </p>
             )}
           </div>
