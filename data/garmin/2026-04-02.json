@@ -1,0 +1,71 @@
+{
+  "date": "2026-04-02",
+  "day_of_week": "Thursday",
+  "recovery_query_date": "2026-04-03",
+  "sleep": {
+    "score": 83,
+    "qualifier": "GOOD",
+    "total_min": 601,
+    "deep_min": 110,
+    "rem_min": 127,
+    "light_min": 364,
+    "awake_min": 19
+  },
+  "hrv": {
+    "last_night": 47,
+    "last_night_5min_high": 80,
+    "weekly_avg": 40,
+    "status": "UNBALANCED",
+    "feedback_phrase": "HRV_UNBALANCED_11"
+  },
+  "body_battery": {
+    "charged": 57,
+    "drained": 56,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 46,
+    "level": "LOW",
+    "feedback_short": "LISTEN_TO_YOUR_BODY",
+    "feedback_long": "LOW_HRV_UNBALANCED"
+  },
+  "daily": {
+    "steps": 7735,
+    "step_goal": 4950,
+    "resting_hr": 58,
+    "max_hr": 168,
+    "stress_avg": 44,
+    "floors": 26.28543,
+    "distance_m": 10103,
+    "active_kcal": 960.0,
+    "total_kcal": 3070.0,
+    "intensity_min_moderate": 11,
+    "intensity_min_vigorous": 4,
+    "vo2_max": null
+  },
+  "activities": [
+    {
+      "name": "Yaiza Walking",
+      "sport": "walking",
+      "start_local": "2026-04-02 11:07:15",
+      "duration_min": 38,
+      "distance_km": 3.15,
+      "avg_hr": 134.0,
+      "max_hr": 173.0,
+      "calories": 354.0,
+      "elevation_gain_m": 77
+    },
+    {
+      "name": "T\u00edas Open Water Swimming",
+      "sport": "open_water_swimming",
+      "start_local": "2026-04-02 08:50:17",
+      "duration_min": 106,
+      "distance_km": 3.81,
+      "avg_hr": 107.0,
+      "max_hr": 136.0,
+      "calories": 606.0,
+      "elevation_gain_m": null
+    }
+  ]
+}

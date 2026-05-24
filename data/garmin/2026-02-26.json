@@ -1,0 +1,60 @@
+{
+  "date": "2026-02-26",
+  "day_of_week": "Thursday",
+  "recovery_query_date": "2026-02-27",
+  "sleep": {
+    "score": 81,
+    "qualifier": "GOOD",
+    "total_min": 450,
+    "deep_min": 46,
+    "rem_min": 93,
+    "light_min": 311,
+    "awake_min": 12
+  },
+  "hrv": {
+    "last_night": 44,
+    "last_night_5min_high": 76,
+    "weekly_avg": 50,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_2"
+  },
+  "body_battery": {
+    "charged": 44,
+    "drained": 25,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 50,
+    "level": "MODERATE",
+    "feedback_short": "GOOD_SLEEP_LAST_NIGHT",
+    "feedback_long": "MOD_RT_MOD_OR_LOW_SS_GOOD_SLEEP_HISTORY_NEG"
+  },
+  "daily": {
+    "steps": 5382,
+    "step_goal": 5870,
+    "resting_hr": 57,
+    "max_hr": 153,
+    "stress_avg": 46,
+    "floors": 7.22277,
+    "distance_m": 5129,
+    "active_kcal": 706.0,
+    "total_kcal": 2816.0,
+    "intensity_min_moderate": 3,
+    "intensity_min_vigorous": 0,
+    "vo2_max": null
+  },
+  "activities": [
+    {
+      "name": "T\u00edas Open Water Swimming",
+      "sport": "open_water_swimming",
+      "start_local": "2026-02-26 09:39:52",
+      "duration_min": 38,
+      "distance_km": 1.53,
+      "avg_hr": 130.0,
+      "max_hr": 158.0,
+      "calories": 413.0,
+      "elevation_gain_m": null
+    }
+  ]
+}

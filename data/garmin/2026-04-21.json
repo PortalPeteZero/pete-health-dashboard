@@ -1,0 +1,60 @@
+{
+  "date": "2026-04-21",
+  "day_of_week": "Tuesday",
+  "recovery_query_date": "2026-04-22",
+  "sleep": {
+    "score": 78,
+    "qualifier": "FAIR",
+    "total_min": 447,
+    "deep_min": 109,
+    "rem_min": 95,
+    "light_min": 243,
+    "awake_min": 29
+  },
+  "hrv": {
+    "last_night": 42,
+    "last_night_5min_high": 66,
+    "weekly_avg": 42,
+    "status": "UNBALANCED",
+    "feedback_phrase": "HRV_UNBALANCED_8"
+  },
+  "body_battery": {
+    "charged": 35,
+    "drained": 35,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 40,
+    "level": "LOW",
+    "feedback_short": "LISTEN_TO_YOUR_BODY",
+    "feedback_long": "LOW_HRV_UNBALANCED"
+  },
+  "daily": {
+    "steps": 11627,
+    "step_goal": 3770,
+    "resting_hr": 57,
+    "max_hr": 151,
+    "stress_avg": 46,
+    "floors": 17.66142,
+    "distance_m": 9835,
+    "active_kcal": 675.0,
+    "total_kcal": 2785.0,
+    "intensity_min_moderate": 15,
+    "intensity_min_vigorous": 0,
+    "vo2_max": null
+  },
+  "activities": [
+    {
+      "name": "Yaiza Running",
+      "sport": "running",
+      "start_local": "2026-04-21 15:50:11",
+      "duration_min": 30,
+      "distance_km": 4.02,
+      "avg_hr": 135.0,
+      "max_hr": 157.0,
+      "calories": 311.0,
+      "elevation_gain_m": 27
+    }
+  ]
+}

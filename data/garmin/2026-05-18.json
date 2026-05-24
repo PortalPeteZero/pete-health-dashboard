@@ -1,0 +1,60 @@
+{
+  "date": "2026-05-18",
+  "day_of_week": "Monday",
+  "recovery_query_date": "2026-05-19",
+  "sleep": {
+    "score": 59,
+    "qualifier": "POOR",
+    "total_min": 427,
+    "deep_min": 56,
+    "rem_min": 0,
+    "light_min": 371,
+    "awake_min": 21
+  },
+  "hrv": {
+    "last_night": 48,
+    "last_night_5min_high": 76,
+    "weekly_avg": 46,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_5"
+  },
+  "body_battery": {
+    "charged": 50,
+    "drained": 58,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 59,
+    "level": "MODERATE",
+    "feedback_short": "FOCUS_ON_ENERGY_LEVELS",
+    "feedback_long": "MOD_RT_MOD_OR_LOW_SS_POOR"
+  },
+  "daily": {
+    "steps": 8841,
+    "step_goal": 3560,
+    "resting_hr": 51,
+    "max_hr": 146,
+    "stress_avg": 40,
+    "floors": 11.39108,
+    "distance_m": 7687,
+    "active_kcal": 520.0,
+    "total_kcal": 2630.0,
+    "intensity_min_moderate": 0,
+    "intensity_min_vigorous": 0,
+    "vo2_max": null
+  },
+  "activities": [
+    {
+      "name": "Wigan Running",
+      "sport": "running",
+      "start_local": "2026-05-18 10:34:22",
+      "duration_min": 28,
+      "distance_km": 4.02,
+      "avg_hr": 128.0,
+      "max_hr": 146.0,
+      "calories": 305.0,
+      "elevation_gain_m": 29
+    }
+  ]
+}

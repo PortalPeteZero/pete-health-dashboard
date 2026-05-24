@@ -1,0 +1,60 @@
+{
+  "date": "2026-05-03",
+  "day_of_week": "Sunday",
+  "recovery_query_date": "2026-05-04",
+  "sleep": {
+    "score": null,
+    "qualifier": null,
+    "total_min": 0,
+    "deep_min": 0,
+    "rem_min": 0,
+    "light_min": 0,
+    "awake_min": 0
+  },
+  "hrv": {
+    "last_night": null,
+    "last_night_5min_high": null,
+    "weekly_avg": 45,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_6"
+  },
+  "body_battery": {
+    "charged": 0,
+    "drained": 71,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 1,
+    "level": "POOR",
+    "feedback_short": "LET_YOUR_BODY_RECOVER",
+    "feedback_long": "POOR_RT_HIGH_SS_UNKNOWN"
+  },
+  "daily": {
+    "steps": 2181,
+    "step_goal": 5160,
+    "resting_hr": 51,
+    "max_hr": 147,
+    "stress_avg": 49,
+    "floors": 4.0,
+    "distance_m": 32468,
+    "active_kcal": 799.0,
+    "total_kcal": 2909.0,
+    "intensity_min_moderate": 12,
+    "intensity_min_vigorous": 78,
+    "vo2_max": null
+  },
+  "activities": [
+    {
+      "name": "Yaiza Road Cycling",
+      "sport": "road_biking",
+      "start_local": "2026-05-03 08:45:03",
+      "duration_min": 80,
+      "distance_km": 30.7,
+      "avg_hr": 131.0,
+      "max_hr": 150.0,
+      "calories": 850.0,
+      "elevation_gain_m": 270
+    }
+  ]
+}

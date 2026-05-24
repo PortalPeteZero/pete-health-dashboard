@@ -1,0 +1,48 @@
+{
+  "date": "2026-04-10",
+  "day_of_week": "Friday",
+  "recovery_query_date": "2026-04-11",
+  "sleep": {
+    "score": 80,
+    "qualifier": "GOOD",
+    "total_min": 426,
+    "deep_min": 51,
+    "rem_min": 87,
+    "light_min": 288,
+    "awake_min": 5
+  },
+  "hrv": {
+    "last_night": 56,
+    "last_night_5min_high": 82,
+    "weekly_avg": 48,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_7"
+  },
+  "body_battery": {
+    "charged": 67,
+    "drained": 60,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 86,
+    "level": "HIGH",
+    "feedback_short": "WELL_RECOVERED",
+    "feedback_long": "HIGH_RT_HIGHEST_SS_AVAILABLE"
+  },
+  "daily": {
+    "steps": 3245,
+    "step_goal": 5610,
+    "resting_hr": 54,
+    "max_hr": 99,
+    "stress_avg": 36,
+    "floors": 0.0,
+    "distance_m": 2658,
+    "active_kcal": 44.0,
+    "total_kcal": 2154.0,
+    "intensity_min_moderate": 0,
+    "intensity_min_vigorous": 0,
+    "vo2_max": null
+  },
+  "activities": []
+}

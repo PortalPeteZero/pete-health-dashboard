@@ -1,0 +1,60 @@
+{
+  "date": "2026-04-20",
+  "day_of_week": "Monday",
+  "recovery_query_date": "2026-04-21",
+  "sleep": {
+    "score": 71,
+    "qualifier": "FAIR",
+    "total_min": 392,
+    "deep_min": 48,
+    "rem_min": 81,
+    "light_min": 263,
+    "awake_min": 27
+  },
+  "hrv": {
+    "last_night": 43,
+    "last_night_5min_high": 75,
+    "weekly_avg": 42,
+    "status": "UNBALANCED",
+    "feedback_phrase": "HRV_UNBALANCED_12"
+  },
+  "body_battery": {
+    "charged": 47,
+    "drained": 47,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 36,
+    "level": "LOW",
+    "feedback_short": "LISTEN_TO_YOUR_BODY",
+    "feedback_long": "LOW_HRV_UNBALANCED"
+  },
+  "daily": {
+    "steps": 3004,
+    "step_goal": 3960,
+    "resting_hr": 54,
+    "max_hr": 181,
+    "stress_avg": 43,
+    "floors": 3.0,
+    "distance_m": 3018,
+    "active_kcal": 339.0,
+    "total_kcal": 2449.0,
+    "intensity_min_moderate": 6,
+    "intensity_min_vigorous": 5,
+    "vo2_max": null
+  },
+  "activities": [
+    {
+      "name": "Pool Swim",
+      "sport": "lap_swimming",
+      "start_local": "2026-04-20 09:05:13",
+      "duration_min": 71,
+      "distance_km": 0.8,
+      "avg_hr": 113.0,
+      "max_hr": 197.0,
+      "calories": 497.0,
+      "elevation_gain_m": null
+    }
+  ]
+}

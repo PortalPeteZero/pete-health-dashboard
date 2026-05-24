@@ -1,0 +1,60 @@
+{
+  "date": "2026-05-11",
+  "day_of_week": "Monday",
+  "recovery_query_date": "2026-05-12",
+  "sleep": {
+    "score": 64,
+    "qualifier": "FAIR",
+    "total_min": 368,
+    "deep_min": 72,
+    "rem_min": 23,
+    "light_min": 273,
+    "awake_min": 20
+  },
+  "hrv": {
+    "last_night": 43,
+    "last_night_5min_high": 86,
+    "weekly_avg": 45,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_2"
+  },
+  "body_battery": {
+    "charged": 41,
+    "drained": 49,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 53,
+    "level": "MODERATE",
+    "feedback_short": "BALANCE_STRESS_AND_RECOVERY",
+    "feedback_long": "MOD_RT_LOW_SS_MOD_STRESS_HISTORY_NEG"
+  },
+  "daily": {
+    "steps": 3840,
+    "step_goal": 5920,
+    "resting_hr": 60,
+    "max_hr": 147,
+    "stress_avg": 44,
+    "floors": 0.0,
+    "distance_m": 4500,
+    "active_kcal": 416.0,
+    "total_kcal": 2526.0,
+    "intensity_min_moderate": 1,
+    "intensity_min_vigorous": 0,
+    "vo2_max": null
+  },
+  "activities": [
+    {
+      "name": "Yaiza Open Water Swimming",
+      "sport": "open_water_swimming",
+      "start_local": "2026-05-11 09:08:19",
+      "duration_min": 31,
+      "distance_km": 1.39,
+      "avg_hr": 132.0,
+      "max_hr": 149.0,
+      "calories": 312.0,
+      "elevation_gain_m": null
+    }
+  ]
+}

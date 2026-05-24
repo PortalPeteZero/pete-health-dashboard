@@ -1,0 +1,71 @@
+{
+  "date": "2026-05-04",
+  "day_of_week": "Monday",
+  "recovery_query_date": "2026-05-05",
+  "sleep": {
+    "score": 81,
+    "qualifier": "GOOD",
+    "total_min": 472,
+    "deep_min": 64,
+    "rem_min": 112,
+    "light_min": 296,
+    "awake_min": 7
+  },
+  "hrv": {
+    "last_night": 40,
+    "last_night_5min_high": 69,
+    "weekly_avg": 43,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_2"
+  },
+  "body_battery": {
+    "charged": 53,
+    "drained": 49,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 1,
+    "level": "POOR",
+    "feedback_short": "LET_YOUR_BODY_RECOVER",
+    "feedback_long": "POOR_RT_HIGH_SS_GOOD_OR_MOD"
+  },
+  "daily": {
+    "steps": 9556,
+    "step_goal": 4570,
+    "resting_hr": 58,
+    "max_hr": 169,
+    "stress_avg": 67,
+    "floors": 11.12566,
+    "distance_m": 10546,
+    "active_kcal": 876.0,
+    "total_kcal": 2986.0,
+    "intensity_min_moderate": 26,
+    "intensity_min_vigorous": 8,
+    "vo2_max": null
+  },
+  "activities": [
+    {
+      "name": "Yaiza Running",
+      "sport": "running",
+      "start_local": "2026-05-04 15:23:31",
+      "duration_min": 38,
+      "distance_km": 5.05,
+      "avg_hr": 138.0,
+      "max_hr": 155.0,
+      "calories": 396.0,
+      "elevation_gain_m": 28
+    },
+    {
+      "name": "Pool Swim",
+      "sport": "lap_swimming",
+      "start_local": "2026-05-04 07:57:01",
+      "duration_min": 74,
+      "distance_km": 1.8,
+      "avg_hr": 125.0,
+      "max_hr": 174.0,
+      "calories": 582.0,
+      "elevation_gain_m": null
+    }
+  ]
+}
