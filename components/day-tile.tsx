@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Moon } from "lucide-react";
 import { minutesToHm, sleepScoreColor } from "@/lib/format";
 import type { GarminDay } from "@/lib/types";
 
@@ -74,6 +75,16 @@ export function DayTile({
       {day.activities.length > 0 && (
         <div className="mt-2 text-center text-[10px] text-muted-foreground">
           {day.activities.length} activit{day.activities.length === 1 ? "y" : "ies"}
+        </div>
+      )}
+
+      {day.signoff && (day.signoff.confirmed || day.signoff.detected) && (
+        <div className="mt-2 flex items-center justify-center gap-1 border-t pt-2 text-[10px] text-muted-foreground">
+          <Moon className="h-3 w-3 shrink-0" />
+          <span className="tabular-nums">
+            {day.signoff.confirmed ? "" : "~"}
+            {day.signoff.confirmed || day.signoff.detected}
+          </span>
         </div>
       )}
     </Link>
