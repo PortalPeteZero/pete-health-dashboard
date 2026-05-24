@@ -16,7 +16,7 @@ import { DailyStatsCard } from "@/components/daily-stats-card";
 import { ActivityList } from "@/components/activity-list";
 import { MarkdownPanel } from "@/components/markdown-panel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Moon } from "lucide-react";
+import { Laptop } from "lucide-react";
 
 export const dynamicParams = false;
 
@@ -69,13 +69,13 @@ export default async function DayPage({
 
       {day.signoff && (day.signoff.confirmed || day.signoff.detected) && (
         <div className="flex items-center gap-3 rounded-xl border bg-muted/40 px-4 py-3">
-          <Moon className="h-5 w-5 shrink-0 text-muted-foreground" />
+          <Laptop className="h-5 w-5 shrink-0 text-muted-foreground" />
           <div className="flex-1">
             <div className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
               Last night
             </div>
             <div className="text-base font-semibold">
-              Signed off {day.signoff.confirmed ? "" : "~"}
+              Finished work {day.signoff.confirmed ? "" : "~"}
               {day.signoff.confirmed || day.signoff.detected}
               {!day.signoff.confirmed && (
                 <span className="ml-2 text-xs font-normal text-muted-foreground">
