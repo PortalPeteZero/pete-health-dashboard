@@ -3,6 +3,12 @@
   "day_of_week": "Saturday",
   "recovery_query_date": "2026-05-23",
   "journal": null,
+  "signoff": {
+    "detected": "23:04",
+    "detected_iso": "2026-05-22T23:04:30.692116+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
   "sleep": {
     "score": 57,
     "qualifier": "POOR",
