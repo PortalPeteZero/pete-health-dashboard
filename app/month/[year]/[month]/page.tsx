@@ -7,6 +7,7 @@ import {
 import { avg, minutesToHm, sportLabel } from "@/lib/format";
 import { DateNav } from "@/components/date-nav";
 import { MonthHeatmap } from "@/components/month-heatmap";
+import { SleepLegend } from "@/components/sleep-legend";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const dynamicParams = false;
@@ -40,7 +41,12 @@ export default async function MonthPage({
   const nextKey = `${next.year}-${String(next.month).padStart(2, "0")}`;
 
   const avgSleep = avg(days, (d) => d.sleep.score);
+  // Only count nights that actually recorded sleep — "watch not worn" days store total_min: 0.
+  const avgSleepMin = avg(days, (d) => (d.sleep.score === null ? null : d.sleep.total_min));
   const avgHrv = avg(days, (d) => d.hrv.last_night);
+  const avgRhr = avg(days, (d) => d.daily.resting_hr);
+  const avgStress = avg(days, (d) => d.daily.stress_avg);
+  const avgReadiness = avg(days, (d) => d.training_readiness.score);
   const totalActivityMin = days.reduce(
     (a, d) => a + d.activities.reduce((s, x) => s + x.duration_min, 0),
     0,
@@ -61,13 +67,18 @@ export default async function MonthPage({
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <Card>
-            <CardHeader className="pb-2">
+            <CardHeader className="pb-1">
               <CardTitle className="text-sm font-medium text-muted-foreground">
-                Sleep score by day
+                Sleep calendar
               </CardTitle>
+              <p className="text-xs text-muted-foreground">
+                Each day shows its <strong>sleep score</strong> and <strong>hours asleep</strong>;
+                the tile colour grades the score. Tap a day for the full breakdown.
+              </p>
             </CardHeader>
             <CardContent>
               <MonthHeatmap year={y} month={m} days={days} />
+              <SleepLegend className="mt-3" />
             </CardContent>
           </Card>
         </div>
@@ -75,12 +86,19 @@ export default async function MonthPage({
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="text-sm font-medium text-muted-foreground">
-                Month averages
+                Daily averages this month
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
               <Row label="Avg sleep score" value={avgSleep} />
+              <Row
+                label="Avg sleep"
+                value={avgSleepMin != null ? minutesToHm(avgSleepMin) : null}
+              />
               <Row label="Avg HRV" value={avgHrv} />
+              <Row label="Avg resting HR" value={avgRhr} />
+              <Row label="Avg stress" value={avgStress} />
+              <Row label="Avg readiness" value={avgReadiness} />
               <Row label="Days tracked" value={days.length} />
               <Row label="Total activity" value={minutesToHm(totalActivityMin)} />
             </CardContent>

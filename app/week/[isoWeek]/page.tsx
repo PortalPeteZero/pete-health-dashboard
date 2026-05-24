@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { format } from "date-fns";
 import {
   getWeekDays,
@@ -10,8 +9,10 @@ import {
   navigatePrevWeek,
   navigateNextWeek,
 } from "@/lib/data";
-import { avg, minutesToHm, sleepScoreColor, sportLabel } from "@/lib/format";
+import { avg, minutesToHm, sportLabel } from "@/lib/format";
 import { DateNav } from "@/components/date-nav";
+import { DayTile } from "@/components/day-tile";
+import { SleepLegend } from "@/components/sleep-legend";
 import { MarkdownPanel } from "@/components/markdown-panel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -38,7 +39,11 @@ export default async function WeekPage({
   const weekNo = isoWeek.split("-W")[1];
 
   const avgSleep = avg(days, (d) => d.sleep.score);
+  // Only count nights that actually recorded sleep — "watch not worn" days store total_min: 0.
+  const avgSleepMin = avg(days, (d) => (d.sleep.score === null ? null : d.sleep.total_min));
   const avgHrv = avg(days, (d) => d.hrv.last_night);
+  const avgRhr = avg(days, (d) => d.daily.resting_hr);
+  const avgStress = avg(days, (d) => d.daily.stress_avg);
   const avgReadiness = avg(days, (d) => d.training_readiness.score);
   const totalActivityMin = days.reduce(
     (a, d) => a + d.activities.reduce((s, x) => s + x.duration_min, 0),
@@ -50,6 +55,15 @@ export default async function WeekPage({
   for (const d of days)
     for (const a of d.activities)
       bySport.set(a.sport, (bySport.get(a.sport) ?? 0) + 1);
+
+  const avgStats = [
+    { label: "avg sleep score", value: avgSleep ?? "—" },
+    { label: "avg sleep", value: avgSleepMin != null ? minutesToHm(avgSleepMin) : "—" },
+    { label: "avg HRV", value: avgHrv ?? "—" },
+    { label: "avg RHR", value: avgRhr ?? "—" },
+    { label: "avg stress", value: avgStress ?? "—" },
+    { label: "avg readiness", value: avgReadiness ?? "—" },
+  ];
 
   return (
     <div className="space-y-6">
@@ -76,67 +90,37 @@ export default async function WeekPage({
         </Card>
       )}
 
-      <div className="grid grid-cols-7 gap-2">
-        {dateStrings.map((ds) => {
-          const d = byDate.get(ds);
-          const dow = new Date(ds + "T12:00:00").toLocaleDateString("en-GB", {
-            weekday: "short",
-          });
-          const dayNum = ds.slice(-2);
-          if (!d) {
-            return (
-              <div
-                key={ds}
-                className="flex flex-col items-center rounded-lg border border-dashed p-2 text-center"
-              >
-                <span className="text-xs text-muted-foreground">{dow}</span>
-                <span className="text-xs text-muted-foreground">{dayNum}</span>
-                <span className="mt-2 text-xs text-muted-foreground">—</span>
-              </div>
-            );
-          }
-          return (
-            <Link
+      <div>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
+          {dateStrings.map((ds) => (
+            <DayTile
               key={ds}
-              href={`/day/${ds}`}
-              className="flex flex-col items-center rounded-lg border p-2 text-center transition-colors hover:bg-accent"
-            >
-              <span className="text-xs text-muted-foreground">{dow}</span>
-              <span className="text-xs text-muted-foreground">{dayNum}</span>
-              <span
-                className="mt-2 flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold text-white"
-                style={{ backgroundColor: sleepScoreColor(d.sleep.score) }}
-              >
-                {d.sleep.score ?? "–"}
-              </span>
-              <span className="mt-1 text-[10px] text-muted-foreground">
-                {d.activities.length ? `${d.activities.length} act` : ""}
-              </span>
-            </Link>
-          );
-        })}
+              day={byDate.get(ds) ?? null}
+              weekday={new Date(ds + "T12:00:00").toLocaleDateString("en-GB", {
+                weekday: "short",
+              })}
+              dayNum={ds.slice(-2)}
+              date={ds}
+            />
+          ))}
+        </div>
+        <SleepLegend className="mt-3" />
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <Card>
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+        <Card className="lg:col-span-2">
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">
-              Week averages
+              Daily averages this week
             </CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-3 gap-4">
-            <div>
-              <div className="text-2xl font-bold tabular-nums">{avgSleep ?? "—"}</div>
-              <div className="text-xs text-muted-foreground">avg sleep</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold tabular-nums">{avgHrv ?? "—"}</div>
-              <div className="text-xs text-muted-foreground">avg HRV</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold tabular-nums">{avgReadiness ?? "—"}</div>
-              <div className="text-xs text-muted-foreground">avg readiness</div>
-            </div>
+            {avgStats.map((s) => (
+              <div key={s.label}>
+                <div className="text-2xl font-bold tabular-nums">{s.value}</div>
+                <div className="text-xs text-muted-foreground">{s.label}</div>
+              </div>
+            ))}
           </CardContent>
         </Card>
         <Card>
