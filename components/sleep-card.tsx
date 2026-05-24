@@ -13,15 +13,6 @@ export function SleepCard({ day }: { day: GarminDay }) {
   ];
   const total = segs.reduce((a, b) => a + b.min, 0) || 1;
 
-  const nextDay = new Date(day.date + "T12:00:00");
-  nextDay.setDate(nextDay.getDate() + 1);
-  const sleepNight = `${new Date(day.date + "T12:00:00").toLocaleDateString("en-GB", {
-    weekday: "short",
-  })} night → ${nextDay.toLocaleDateString("en-GB", {
-    weekday: "short",
-    day: "numeric",
-  })} morning`;
-
   return (
     <Card>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -39,7 +30,6 @@ export function SleepCard({ day }: { day: GarminDay }) {
                 {minutesToHm(s.total_min)} asleep
               </span>
             </div>
-            <p className="mt-0.5 text-xs text-muted-foreground">{sleepNight}</p>
             <div className="mt-4 flex h-3 w-full overflow-hidden rounded-full bg-muted">
               {segs.map((seg) => (
                 <div

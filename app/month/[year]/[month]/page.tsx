@@ -72,9 +72,8 @@ export default async function MonthPage({
                 Sleep calendar
               </CardTitle>
               <p className="text-xs text-muted-foreground">
-                Each day shows the <strong>sleep that followed it</strong> — score and hours
-                asleep; the tile colour grades the score. (Garmin logs that sleep under the next
-                morning.) Tap a day for the full breakdown.
+                Each day shows its <strong>sleep score</strong> and <strong>hours asleep</strong>;
+                the tile colour grades the score. Tap a day for the full breakdown.
               </p>
             </CardHeader>
             <CardContent>

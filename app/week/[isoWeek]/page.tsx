@@ -104,12 +104,7 @@ export default async function WeekPage({
             />
           ))}
         </div>
-        <div className="mt-3 flex flex-col gap-1">
-          <SleepLegend />
-          <p className="text-xs text-muted-foreground">
-            Each day shows the sleep that followed it (the night of that day).
-          </p>
-        </div>
+        <SleepLegend className="mt-3" />
       </div>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
