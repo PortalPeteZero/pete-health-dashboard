@@ -1,34 +1,35 @@
 {
   "date": "2026-04-29",
   "day_of_week": "Wednesday",
-  "recovery_query_date": "2026-04-30",
+  "recovery_query_date": "2026-04-29",
+  "journal": null,
   "sleep": {
-    "score": 77,
+    "score": 76,
     "qualifier": "FAIR",
-    "total_min": 398,
-    "deep_min": 69,
-    "rem_min": 67,
-    "light_min": 262,
-    "awake_min": 8
+    "total_min": 437,
+    "deep_min": 61,
+    "rem_min": 94,
+    "light_min": 282,
+    "awake_min": 33
   },
   "hrv": {
-    "last_night": 43,
-    "last_night_5min_high": 66,
+    "last_night": 46,
+    "last_night_5min_high": 80,
     "weekly_avg": 45,
     "status": "BALANCED",
-    "feedback_phrase": "HRV_BALANCED_6"
+    "feedback_phrase": "HRV_BALANCED_5"
   },
   "body_battery": {
-    "charged": 52,
-    "drained": 52,
+    "charged": 60,
+    "drained": 65,
     "highest": null,
     "lowest": null
   },
   "training_readiness": {
-    "score": 62,
+    "score": 50,
     "level": "MODERATE",
-    "feedback_short": "GOOD_SLEEP_HISTORY",
-    "feedback_long": "MOD_RT_LOW_SS_MOD"
+    "feedback_short": "LISTEN_TO_YOUR_BODY",
+    "feedback_long": "MOD_RT_MOD_SS_MOD"
   },
   "daily": {
     "steps": 12411,

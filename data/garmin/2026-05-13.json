@@ -1,7 +1,8 @@
 {
   "date": "2026-05-13",
   "day_of_week": "Wednesday",
-  "recovery_query_date": "2026-05-14",
+  "recovery_query_date": "2026-05-13",
+  "journal": null,
   "sleep": {
     "score": null,
     "qualifier": null,
@@ -19,16 +20,16 @@
     "feedback_phrase": null
   },
   "body_battery": {
-    "charged": 5,
-    "drained": 44,
+    "charged": 0,
+    "drained": 48,
     "highest": null,
     "lowest": null
   },
   "training_readiness": {
-    "score": 68,
-    "level": "MODERATE",
-    "feedback_short": "RECOVERED_AND_READY",
-    "feedback_long": "MOD_RT_LOW_SS_UNKNOWN_SLEEP_HISTORY_NEG"
+    "score": 44,
+    "level": "LOW",
+    "feedback_short": "UNKNOWN",
+    "feedback_long": "UNKNOWN"
   },
   "daily": {
     "steps": 2378,

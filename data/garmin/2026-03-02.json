@@ -1,7 +1,8 @@
 {
   "date": "2026-03-02",
   "day_of_week": "Monday",
-  "recovery_query_date": "2026-03-03",
+  "recovery_query_date": "2026-03-02",
+  "journal": null,
   "sleep": {
     "score": null,
     "qualifier": null,
@@ -25,7 +26,7 @@
     "lowest": null
   },
   "training_readiness": {
-    "score": 65,
+    "score": 62,
     "level": "MODERATE",
     "feedback_short": "UNKNOWN",
     "feedback_long": "UNKNOWN"

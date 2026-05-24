@@ -1,7 +1,8 @@
 {
   "date": "2026-03-03",
   "day_of_week": "Tuesday",
-  "recovery_query_date": "2026-03-04",
+  "recovery_query_date": "2026-03-03",
+  "journal": null,
   "sleep": {
     "score": null,
     "qualifier": null,
@@ -19,16 +20,16 @@
     "feedback_phrase": null
   },
   "body_battery": {
-    "charged": 13,
-    "drained": 71,
+    "charged": null,
+    "drained": null,
     "highest": null,
     "lowest": null
   },
   "training_readiness": {
-    "score": 62,
+    "score": 65,
     "level": "MODERATE",
-    "feedback_short": "RECOVERY_IN_PROGRESS",
-    "feedback_long": "MOD_RT_MOD_SS_UNKNOWN"
+    "feedback_short": "UNKNOWN",
+    "feedback_long": "UNKNOWN"
   },
   "daily": {
     "steps": null,
