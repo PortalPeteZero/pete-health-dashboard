@@ -64,7 +64,13 @@ export default async function DayPage({
         options={options}
         currentValue={date}
       />
-      <h1 className="text-2xl font-bold">{prettyDate(date)}</h1>
+      <div>
+        <h1 className="text-2xl font-bold">{prettyDate(date)}</h1>
+        <p className="text-sm text-muted-foreground">
+          The day&apos;s activity paired with the sleep that followed it — Garmin logs that
+          same sleep under the next morning.
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <SleepCard day={day} />
