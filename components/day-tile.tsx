@@ -79,11 +79,12 @@ export function DayTile({
       )}
 
       {day.signoff && (day.signoff.confirmed || day.signoff.detected) && (
-        <div className="mt-2 flex flex-col items-center gap-0.5 border-t pt-2 text-[10px] text-muted-foreground">
+        <div className="mt-2 flex flex-col items-center gap-0.5 border-t pt-2 text-[10px] leading-tight text-muted-foreground">
           <span className="flex items-center gap-1 uppercase tracking-wide">
             <Laptop className="h-3 w-3 shrink-0" />
             Finished work
           </span>
+          <span className="uppercase tracking-wide">previous night</span>
           <span className="tabular-nums font-semibold">
             {day.signoff.confirmed ? "" : "~"}
             {day.signoff.confirmed || day.signoff.detected}
