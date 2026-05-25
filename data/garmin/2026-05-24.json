@@ -26,8 +26,8 @@
     "feedback_phrase": "HRV_BALANCED_6"
   },
   "body_battery": {
-    "charged": 59,
-    "drained": 27,
+    "charged": 65,
+    "drained": 50,
     "highest": null,
     "lowest": null
   },
@@ -38,15 +38,15 @@
     "feedback_long": "MOD_RT_MOD_OR_LOW_SS_GOOD_SLEEP_HISTORY_NEG"
   },
   "daily": {
-    "steps": 1104,
+    "steps": 1941,
     "step_goal": 3560,
     "resting_hr": 55,
-    "max_hr": 103,
-    "stress_avg": 32,
-    "floors": 0.0,
-    "distance_m": 904,
-    "active_kcal": 29.0,
-    "total_kcal": 1336.0,
+    "max_hr": 106,
+    "stress_avg": 38,
+    "floors": 0.68209,
+    "distance_m": 1590,
+    "active_kcal": 52.0,
+    "total_kcal": 2162.0,
     "intensity_min_moderate": 0,
     "intensity_min_vigorous": 0,
     "vo2_max": null

@@ -1,0 +1,55 @@
+{
+  "date": "2026-05-25",
+  "day_of_week": "Monday",
+  "recovery_query_date": "2026-05-25",
+  "journal": null,
+  "signoff": {
+    "detected": "23:01",
+    "detected_iso": "2026-05-24T23:01:17.709850+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
+  "sleep": {
+    "score": null,
+    "qualifier": null,
+    "total_min": 0,
+    "deep_min": 0,
+    "rem_min": 0,
+    "light_min": 0,
+    "awake_min": 0
+  },
+  "hrv": {
+    "last_night": null,
+    "last_night_5min_high": null,
+    "weekly_avg": 47,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_7"
+  },
+  "body_battery": {
+    "charged": 44,
+    "drained": 2,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 79,
+    "level": "HIGH",
+    "feedback_short": "WELL_RECOVERED",
+    "feedback_long": "HIGH_RT_AVAILABLE_SS_UNKNOWN"
+  },
+  "daily": {
+    "steps": 128,
+    "step_goal": 3560,
+    "resting_hr": 57,
+    "max_hr": 108,
+    "stress_avg": 24,
+    "floors": 0.0,
+    "distance_m": 104,
+    "active_kcal": 26.0,
+    "total_kcal": 651.0,
+    "intensity_min_moderate": 0,
+    "intensity_min_vigorous": 0,
+    "vo2_max": null
+  },
+  "activities": []
+}
