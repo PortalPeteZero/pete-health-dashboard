@@ -3,6 +3,12 @@
   "day_of_week": "Sunday",
   "recovery_query_date": "2026-03-29",
   "journal": null,
+  "signoff": {
+    "detected": "22:51",
+    "detected_iso": "2026-03-28T22:51:12.692276+00:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
   "sleep": {
     "score": 55,
     "qualifier": "POOR",
@@ -45,6 +51,31 @@
     "intensity_min_vigorous": 0,
     "vo2_max": null
   },
+  "training": {
+    "status_int": 5,
+    "status_label": "Productive",
+    "status_phrase": "RECOVERY_2",
+    "fitness_trend": 2,
+    "primary_sport": "RUNNING",
+    "since_date": "2026-03-28",
+    "acute_load": 124,
+    "chronic_load": 176,
+    "acwr_ratio": 0.7,
+    "acwr_status": "LOW",
+    "acwr_percent": 29,
+    "load_tunnel_min": 140.8,
+    "load_tunnel_max": 264.0,
+    "vo2_max": 42.4,
+    "vo2_max_date": "2026-03-23",
+    "fitness_age": null,
+    "race_predictions": {
+      "calendar_date": "2026-05-25",
+      "time_5k_sec": 1826,
+      "time_10k_sec": 3972,
+      "time_half_marathon_sec": 9294,
+      "time_marathon_sec": 21416
+    }
+  },
   "activities": [
     {
       "name": "T\u00edas Open Water Swimming",
@@ -55,7 +86,47 @@
       "avg_hr": 109.0,
       "max_hr": 141.0,
       "calories": 274.0,
-      "elevation_gain_m": null
+      "elevation_gain_m": null,
+      "activity_id": 22335736340,
+      "duration_sec": 3266.049072265625,
+      "distance_m": 1926.469970703125,
+      "moving_duration_sec": 3151.0,
+      "aerobic_te": 3.0,
+      "aerobic_te_msg": "IMPROVING_AEROBIC_BASE_8",
+      "anaerobic_te": 0.10000000149011612,
+      "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
+      "te_label": "AEROBIC_BASE",
+      "training_load": 56.20768737792969,
+      "hr_zones": {
+        "z1": 558,
+        "z2": 2,
+        "z3": 0,
+        "z4": 0,
+        "z5": 0
+      },
+      "hr_zone_total_sec": 560,
+      "avg_speed_mps": 0.5899999737739563,
+      "max_speed_mps": 2.4820001125335693,
+      "pace_min_per_km": 28.25,
+      "pace_sec_per_100m": 169.5,
+      "moderate_intensity_min": null,
+      "vigorous_intensity_min": null,
+      "run_cadence_avg_spm": null,
+      "run_cadence_max_spm": null,
+      "bike_power_avg_w": null,
+      "bike_power_max_w": null,
+      "bike_power_normalized_w": null,
+      "bike_intensity_factor": null,
+      "bike_tss": null,
+      "swim_strokes": 1331.0,
+      "swim_avg_strokes_per_length": null,
+      "swim_cadence_avg_spm": 25.0,
+      "swim_avg_swolf": null,
+      "swim_fastest_100_sec": null,
+      "swim_active_lengths": null,
+      "swim_pool_length_m": null,
+      "lap_count": 4,
+      "splits": []
     }
   ]
 }

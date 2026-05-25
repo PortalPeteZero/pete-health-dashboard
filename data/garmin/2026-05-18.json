@@ -3,6 +3,12 @@
   "day_of_week": "Monday",
   "recovery_query_date": "2026-05-18",
   "journal": null,
+  "signoff": {
+    "detected": "20:19",
+    "detected_iso": "2026-05-17T20:19:44.111140+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
   "sleep": {
     "score": 77,
     "qualifier": "FAIR",
@@ -45,6 +51,31 @@
     "intensity_min_vigorous": 0,
     "vo2_max": null
   },
+  "training": {
+    "status_int": 5,
+    "status_label": "Productive",
+    "status_phrase": "RECOVERY_2",
+    "fitness_trend": 2,
+    "primary_sport": "RUNNING",
+    "since_date": "2026-05-15",
+    "acute_load": 123,
+    "chronic_load": 195,
+    "acwr_ratio": 0.6,
+    "acwr_status": "LOW",
+    "acwr_percent": 25,
+    "load_tunnel_min": 156.0,
+    "load_tunnel_max": 292.5,
+    "vo2_max": 41.1,
+    "vo2_max_date": "2026-05-18",
+    "fitness_age": null,
+    "race_predictions": {
+      "calendar_date": "2026-05-25",
+      "time_5k_sec": 1826,
+      "time_10k_sec": 3972,
+      "time_half_marathon_sec": 9294,
+      "time_marathon_sec": 21416
+    }
+  },
   "activities": [
     {
       "name": "Wigan Running",
@@ -55,13 +86,72 @@
       "avg_hr": 128.0,
       "max_hr": 146.0,
       "calories": 305.0,
-      "elevation_gain_m": 29
+      "elevation_gain_m": 29,
+      "activity_id": 22921532984,
+      "duration_sec": 1739.8909912109375,
+      "distance_m": 4017.199951171875,
+      "moving_duration_sec": 1739.0549926757812,
+      "aerobic_te": 3.299999952316284,
+      "aerobic_te_msg": "IMPROVING_AEROBIC_BASE_8",
+      "anaerobic_te": 0.0,
+      "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
+      "te_label": "AEROBIC_BASE",
+      "training_load": 64.78221130371094,
+      "hr_zones": {
+        "z1": 1368,
+        "z2": 4,
+        "z3": 0,
+        "z4": 0,
+        "z5": 0
+      },
+      "hr_zone_total_sec": 1372,
+      "avg_speed_mps": 2.309000015258789,
+      "max_speed_mps": 2.687000036239624,
+      "pace_min_per_km": 7.22,
+      "pace_sec_per_100m": 43.3,
+      "moderate_intensity_min": null,
+      "vigorous_intensity_min": null,
+      "run_cadence_avg_spm": 150.375,
+      "run_cadence_max_spm": 163.0,
+      "bike_power_avg_w": null,
+      "bike_power_max_w": null,
+      "bike_power_normalized_w": 271.0,
+      "bike_intensity_factor": null,
+      "bike_tss": null,
+      "swim_strokes": null,
+      "swim_avg_strokes_per_length": null,
+      "swim_cadence_avg_spm": null,
+      "swim_avg_swolf": null,
+      "swim_fastest_100_sec": null,
+      "swim_active_lengths": null,
+      "swim_pool_length_m": null,
+      "lap_count": 5,
+      "splits": [
+        {
+          "split_type": "INTERVAL_ACTIVE",
+          "duration_sec": 1739.8909912109375,
+          "distance_m": 4017.199951171875,
+          "avg_hr": null,
+          "max_hr": null,
+          "avg_speed_mps": 2.309000015258789
+        },
+        {
+          "split_type": "RWD_RUN",
+          "duration_sec": 1725.863037109375,
+          "distance_m": 3989.719970703125,
+          "avg_hr": null,
+          "max_hr": null,
+          "avg_speed_mps": 2.312000036239624
+        },
+        {
+          "split_type": "RWD_WALK",
+          "duration_sec": 14.00100040435791,
+          "distance_m": 27.479999542236328,
+          "avg_hr": null,
+          "max_hr": null,
+          "avg_speed_mps": 1.9630000591278076
+        }
+      ]
     }
-  ],
-  "signoff": {
-    "detected": "20:19",
-    "detected_iso": "2026-05-17T20:19:44.111140+01:00",
-    "confirmed": null,
-    "source": "claude-session-activity"
-  }
+  ]
 }

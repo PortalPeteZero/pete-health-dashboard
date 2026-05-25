@@ -3,6 +3,12 @@
   "day_of_week": "Sunday",
   "recovery_query_date": "2026-03-01",
   "journal": null,
+  "signoff": {
+    "detected": "17:51",
+    "detected_iso": "2026-02-28T17:51:08.068214+00:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
   "sleep": {
     "score": null,
     "qualifier": null,
@@ -44,6 +50,31 @@
     "intensity_min_moderate": 0,
     "intensity_min_vigorous": 0,
     "vo2_max": null
+  },
+  "training": {
+    "status_int": 7,
+    "status_label": "Overreaching",
+    "status_phrase": "PRODUCTIVE_2",
+    "fitness_trend": 2,
+    "primary_sport": "RUNNING",
+    "since_date": "2026-02-25",
+    "acute_load": 248,
+    "chronic_load": 221,
+    "acwr_ratio": 1.1,
+    "acwr_status": "OPTIMAL",
+    "acwr_percent": 47,
+    "load_tunnel_min": 176.8,
+    "load_tunnel_max": 331.5,
+    "vo2_max": 43.8,
+    "vo2_max_date": "2026-02-28",
+    "fitness_age": null,
+    "race_predictions": {
+      "calendar_date": "2026-05-25",
+      "time_5k_sec": 1826,
+      "time_10k_sec": 3972,
+      "time_half_marathon_sec": 9294,
+      "time_marathon_sec": 21416
+    }
   },
   "activities": []
 }

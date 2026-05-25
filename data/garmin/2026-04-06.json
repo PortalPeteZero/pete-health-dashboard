@@ -3,6 +3,12 @@
   "day_of_week": "Monday",
   "recovery_query_date": "2026-04-06",
   "journal": null,
+  "signoff": {
+    "detected": "22:54",
+    "detected_iso": "2026-04-05T22:54:53.712259+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
   "sleep": {
     "score": null,
     "qualifier": null,
@@ -45,6 +51,31 @@
     "intensity_min_vigorous": 15,
     "vo2_max": null
   },
+  "training": {
+    "status_int": 8,
+    "status_label": null,
+    "status_phrase": "STRAINED_1",
+    "fitness_trend": 1,
+    "primary_sport": "RUNNING",
+    "since_date": "2026-04-06",
+    "acute_load": 195,
+    "chronic_load": 176,
+    "acwr_ratio": 1.1,
+    "acwr_status": "OPTIMAL",
+    "acwr_percent": 47,
+    "load_tunnel_min": 140.8,
+    "load_tunnel_max": 264.0,
+    "vo2_max": 41.5,
+    "vo2_max_date": "2026-04-06",
+    "fitness_age": null,
+    "race_predictions": {
+      "calendar_date": "2026-05-25",
+      "time_5k_sec": 1826,
+      "time_10k_sec": 3972,
+      "time_half_marathon_sec": 9294,
+      "time_marathon_sec": 21416
+    }
+  },
   "activities": [
     {
       "name": "Yaiza Running",
@@ -55,7 +86,72 @@
       "avg_hr": 146.0,
       "max_hr": 167.0,
       "calories": 569.0,
-      "elevation_gain_m": 52
+      "elevation_gain_m": 52,
+      "activity_id": 22428998064,
+      "duration_sec": 3307.43798828125,
+      "distance_m": 7144.5,
+      "moving_duration_sec": 3305.5260009765625,
+      "aerobic_te": 3.200000047683716,
+      "aerobic_te_msg": "IMPROVING_LACTATE_THRESHOLD_12",
+      "anaerobic_te": 0.0,
+      "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
+      "te_label": "LACTATE_THRESHOLD",
+      "training_load": 69.91554260253906,
+      "hr_zones": {
+        "z1": 948,
+        "z2": 1400,
+        "z3": 906,
+        "z4": 5,
+        "z5": 0
+      },
+      "hr_zone_total_sec": 3259,
+      "avg_speed_mps": 2.1600000858306885,
+      "max_speed_mps": 2.434999942779541,
+      "pace_min_per_km": 7.72,
+      "pace_sec_per_100m": 46.3,
+      "moderate_intensity_min": 23,
+      "vigorous_intensity_min": 13,
+      "run_cadence_avg_spm": 148.078125,
+      "run_cadence_max_spm": 160.0,
+      "bike_power_avg_w": null,
+      "bike_power_max_w": null,
+      "bike_power_normalized_w": 261.0,
+      "bike_intensity_factor": null,
+      "bike_tss": null,
+      "swim_strokes": null,
+      "swim_avg_strokes_per_length": null,
+      "swim_cadence_avg_spm": null,
+      "swim_avg_swolf": null,
+      "swim_fastest_100_sec": null,
+      "swim_active_lengths": null,
+      "swim_pool_length_m": null,
+      "lap_count": 8,
+      "splits": [
+        {
+          "split_type": "RWD_WALK",
+          "duration_sec": 198.0,
+          "distance_m": 306.1199951171875,
+          "avg_hr": null,
+          "max_hr": null,
+          "avg_speed_mps": 1.5460000038146973
+        },
+        {
+          "split_type": "INTERVAL_ACTIVE",
+          "duration_sec": 3307.43798828125,
+          "distance_m": 7144.490234375,
+          "avg_hr": null,
+          "max_hr": null,
+          "avg_speed_mps": 2.1600000858306885
+        },
+        {
+          "split_type": "RWD_RUN",
+          "duration_sec": 3109.416015625,
+          "distance_m": 6838.3701171875,
+          "avg_hr": null,
+          "max_hr": null,
+          "avg_speed_mps": 2.1989998817443848
+        }
+      ]
     }
   ]
 }

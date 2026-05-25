@@ -3,6 +3,12 @@
   "day_of_week": "Thursday",
   "recovery_query_date": "2026-05-07",
   "journal": null,
+  "signoff": {
+    "detected": "23:59",
+    "detected_iso": "2026-05-06T23:59:51.349931+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
   "sleep": {
     "score": null,
     "qualifier": null,
@@ -45,6 +51,31 @@
     "intensity_min_vigorous": 0,
     "vo2_max": null
   },
+  "training": {
+    "status_int": 7,
+    "status_label": "Overreaching",
+    "status_phrase": "PRODUCTIVE_6",
+    "fitness_trend": 2,
+    "primary_sport": "RUNNING",
+    "since_date": "2026-05-06",
+    "acute_load": 281,
+    "chronic_load": 168,
+    "acwr_ratio": 1.6,
+    "acwr_status": "HIGH",
+    "acwr_percent": 73,
+    "load_tunnel_min": 134.4,
+    "load_tunnel_max": 252.0,
+    "vo2_max": 40.5,
+    "vo2_max_date": "2026-05-04",
+    "fitness_age": null,
+    "race_predictions": {
+      "calendar_date": "2026-05-25",
+      "time_5k_sec": 1826,
+      "time_10k_sec": 3972,
+      "time_half_marathon_sec": 9294,
+      "time_marathon_sec": 21416
+    }
+  },
   "activities": [
     {
       "name": "T\u00edas Open Water Swimming",
@@ -55,13 +86,47 @@
       "avg_hr": 116.0,
       "max_hr": 127.0,
       "calories": 412.0,
-      "elevation_gain_m": null
+      "elevation_gain_m": null,
+      "activity_id": 22796237484,
+      "duration_sec": 3426.347900390625,
+      "distance_m": 2203.719970703125,
+      "moving_duration_sec": 3398.822998046875,
+      "aerobic_te": 2.5,
+      "aerobic_te_msg": "MAINTAINING_AEROBIC_BASE_7",
+      "anaerobic_te": 0.0,
+      "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
+      "te_label": "AEROBIC_BASE",
+      "training_load": 31.231460571289062,
+      "hr_zones": {
+        "z1": 2135,
+        "z2": 0,
+        "z3": 0,
+        "z4": 0,
+        "z5": 0
+      },
+      "hr_zone_total_sec": 2135,
+      "avg_speed_mps": 0.6430000066757202,
+      "max_speed_mps": 1.5119999647140503,
+      "pace_min_per_km": 25.92,
+      "pace_sec_per_100m": 155.5,
+      "moderate_intensity_min": null,
+      "vigorous_intensity_min": null,
+      "run_cadence_avg_spm": null,
+      "run_cadence_max_spm": null,
+      "bike_power_avg_w": null,
+      "bike_power_max_w": null,
+      "bike_power_normalized_w": null,
+      "bike_intensity_factor": null,
+      "bike_tss": null,
+      "swim_strokes": 1449.0,
+      "swim_avg_strokes_per_length": null,
+      "swim_cadence_avg_spm": 25.0,
+      "swim_avg_swolf": null,
+      "swim_fastest_100_sec": null,
+      "swim_active_lengths": null,
+      "swim_pool_length_m": null,
+      "lap_count": 5,
+      "splits": []
     }
-  ],
-  "signoff": {
-    "detected": "23:59",
-    "detected_iso": "2026-05-06T23:59:51.349931+01:00",
-    "confirmed": null,
-    "source": "claude-session-activity"
-  }
+  ]
 }

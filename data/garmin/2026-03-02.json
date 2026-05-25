@@ -3,6 +3,12 @@
   "day_of_week": "Monday",
   "recovery_query_date": "2026-03-02",
   "journal": null,
+  "signoff": {
+    "detected": "23:53",
+    "detected_iso": "2026-03-01T23:53:09.543543+00:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
   "sleep": {
     "score": null,
     "qualifier": null,
@@ -44,6 +50,31 @@
     "intensity_min_moderate": 0,
     "intensity_min_vigorous": 0,
     "vo2_max": null
+  },
+  "training": {
+    "status_int": 4,
+    "status_label": "Maintaining",
+    "status_phrase": "MAINTAINING_2",
+    "fitness_trend": 2,
+    "primary_sport": "RUNNING",
+    "since_date": "2026-03-02",
+    "acute_load": 205,
+    "chronic_load": 215,
+    "acwr_ratio": 0.9,
+    "acwr_status": "OPTIMAL",
+    "acwr_percent": 38,
+    "load_tunnel_min": 172.0,
+    "load_tunnel_max": 322.5,
+    "vo2_max": 43.8,
+    "vo2_max_date": "2026-02-28",
+    "fitness_age": null,
+    "race_predictions": {
+      "calendar_date": "2026-05-25",
+      "time_5k_sec": 1826,
+      "time_10k_sec": 3972,
+      "time_half_marathon_sec": 9294,
+      "time_marathon_sec": 21416
+    }
   },
   "activities": []
 }
