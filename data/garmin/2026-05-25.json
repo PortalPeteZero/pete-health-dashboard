@@ -4,8 +4,8 @@
   "recovery_query_date": "2026-05-25",
   "journal": null,
   "signoff": {
-    "detected": "23:01",
-    "detected_iso": "2026-05-24T23:01:17.709850+01:00",
+    "detected": "22:44",
+    "detected_iso": "2026-05-24T22:44:21.150571+01:00",
     "confirmed": "22:00",
     "source": "claude-session-activity"
   },
