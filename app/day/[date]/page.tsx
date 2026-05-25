@@ -104,17 +104,31 @@ export default async function DayPage({
         <div className="md:col-span-2">
           <DailyStatsCard day={day} />
         </div>
-        <div className="md:col-span-2 space-y-2">
+        <div className="md:col-span-2 space-y-3">
           <ActivityList activities={day.activities} />
           {day.activities.length > 0 ? (
-            <p className="text-right text-xs">
-              <a
-                href={`/training/${day.date}`}
-                className="text-muted-foreground hover:text-foreground"
+            <a
+              href={`/training/${day.date}`}
+              className="group flex items-center justify-between gap-3 rounded-xl bg-gradient-to-r from-emerald-500 to-sky-500 px-4 py-3 text-white shadow-sm transition-all hover:shadow-md hover:from-emerald-600 hover:to-sky-600 active:scale-[0.99]"
+            >
+              <div className="flex items-center gap-3">
+                <span aria-hidden className="text-xl">⚡</span>
+                <div>
+                  <div className="text-sm font-semibold leading-tight">
+                    View training detail
+                  </div>
+                  <div className="text-xs text-white/80 leading-tight">
+                    HR zones · training effect · splits · ACWR · load
+                  </div>
+                </div>
+              </div>
+              <span
+                aria-hidden
+                className="text-lg transition-transform group-hover:translate-x-1"
               >
-                View training detail →
-              </a>
-            </p>
+                →
+              </span>
+            </a>
           ) : null}
         </div>
       </div>
