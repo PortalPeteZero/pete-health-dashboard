@@ -10,10 +10,12 @@ import {
   navigateNextWeek,
 } from "@/lib/data";
 import { avg, minutesToHm, sportLabel } from "@/lib/format";
+import { computeWeeklyRollup } from "@/lib/training";
 import { DateNav } from "@/components/date-nav";
 import { DayTile } from "@/components/day-tile";
 import { SleepLegend } from "@/components/sleep-legend";
 import { MarkdownPanel } from "@/components/markdown-panel";
+import { WeeklyTrainingSection } from "@/components/weekly-training-section";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const dynamicParams = false;
@@ -56,6 +58,9 @@ export default async function WeekPage({
     for (const a of d.activities)
       bySport.set(a.sport, (bySport.get(a.sport) ?? 0) + 1);
 
+  // Week training rollup — computed live from the 7 daily JSONs.
+  const trainingRollup = computeWeeklyRollup(isoWeek, days);
+
   const avgStats = [
     { label: "avg sleep score", value: avgSleep ?? "—" },
     { label: "avg sleep", value: avgSleepMin != null ? minutesToHm(avgSleepMin) : "—" },
@@ -89,6 +94,8 @@ export default async function WeekPage({
           </CardContent>
         </Card>
       )}
+
+      <WeeklyTrainingSection rollup={trainingRollup} />
 
       <div>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">

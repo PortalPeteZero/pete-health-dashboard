@@ -36,6 +36,7 @@ export default function RootLayout({
 
   const items = [
     { label: "Day", href: `/day/${latest}`, match: "/day" },
+    { label: "Training", href: `/training/${latest}`, match: "/training" },
     { label: "Week", href: `/week/${week}`, match: "/week" },
     { label: "Month", href: `/month/${year}/${month}`, match: "/month" },
     { label: "90 days", href: "/90-days", match: "/90-days" },

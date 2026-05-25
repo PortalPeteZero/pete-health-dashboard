@@ -104,8 +104,18 @@ export default async function DayPage({
         <div className="md:col-span-2">
           <DailyStatsCard day={day} />
         </div>
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 space-y-2">
           <ActivityList activities={day.activities} />
+          {day.activities.length > 0 ? (
+            <p className="text-right text-xs">
+              <a
+                href={`/training/${day.date}`}
+                className="text-muted-foreground hover:text-foreground"
+              >
+                View training detail →
+              </a>
+            </p>
+          ) : null}
         </div>
       </div>
 
