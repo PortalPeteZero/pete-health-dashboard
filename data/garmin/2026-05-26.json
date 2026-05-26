@@ -10,23 +10,23 @@
     "source": "claude-session-activity"
   },
   "sleep": {
-    "score": null,
-    "qualifier": null,
-    "total_min": 0,
-    "deep_min": 0,
-    "rem_min": 0,
-    "light_min": 0,
-    "awake_min": 0
+    "score": 66,
+    "qualifier": "FAIR",
+    "total_min": 423,
+    "deep_min": 47,
+    "rem_min": 89,
+    "light_min": 287,
+    "awake_min": 32
   },
   "hrv": {
-    "last_night": null,
-    "last_night_5min_high": null,
-    "weekly_avg": 46,
+    "last_night": 38,
+    "last_night_5min_high": 61,
+    "weekly_avg": 45,
     "status": "BALANCED",
-    "feedback_phrase": "HRV_BALANCED_8"
+    "feedback_phrase": "HRV_BALANCED_3"
   },
   "body_battery": {
-    "charged": 0,
+    "charged": 27,
     "drained": 0,
     "highest": null,
     "lowest": null
@@ -38,15 +38,15 @@
     "feedback_long": "MOD_RT_LOW_SS_UNKNOWN"
   },
   "daily": {
-    "steps": null,
+    "steps": 180,
     "step_goal": 3560,
     "resting_hr": 59,
-    "max_hr": 97,
-    "stress_avg": 38,
+    "max_hr": 101,
+    "stress_avg": 30,
     "floors": 0.0,
-    "distance_m": null,
-    "active_kcal": 0.0,
-    "total_kcal": 77.0,
+    "distance_m": 147,
+    "active_kcal": 2.0,
+    "total_kcal": 695.0,
     "intensity_min_moderate": 0,
     "intensity_min_vigorous": 0,
     "vo2_max": null
