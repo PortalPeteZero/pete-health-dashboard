@@ -1,0 +1,80 @@
+{
+  "date": "2026-05-26",
+  "day_of_week": "Tuesday",
+  "recovery_query_date": "2026-05-26",
+  "journal": null,
+  "signoff": {
+    "detected": "22:47",
+    "detected_iso": "2026-05-25T22:47:38.649069+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
+  "sleep": {
+    "score": null,
+    "qualifier": null,
+    "total_min": 0,
+    "deep_min": 0,
+    "rem_min": 0,
+    "light_min": 0,
+    "awake_min": 0
+  },
+  "hrv": {
+    "last_night": null,
+    "last_night_5min_high": null,
+    "weekly_avg": 46,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_8"
+  },
+  "body_battery": {
+    "charged": 0,
+    "drained": 0,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 73,
+    "level": "MODERATE",
+    "feedback_short": "GOOD_SLEEP_HISTORY",
+    "feedback_long": "MOD_RT_LOW_SS_UNKNOWN"
+  },
+  "daily": {
+    "steps": null,
+    "step_goal": 3560,
+    "resting_hr": 59,
+    "max_hr": 97,
+    "stress_avg": 38,
+    "floors": 0.0,
+    "distance_m": null,
+    "active_kcal": 0.0,
+    "total_kcal": 77.0,
+    "intensity_min_moderate": 0,
+    "intensity_min_vigorous": 0,
+    "vo2_max": null
+  },
+  "training": {
+    "status_int": 4,
+    "status_label": "Maintaining",
+    "status_phrase": "MAINTAINING_2",
+    "fitness_trend": 2,
+    "primary_sport": "RUNNING",
+    "since_date": "2026-05-25",
+    "acute_load": 141,
+    "chronic_load": 176,
+    "acwr_ratio": 0.7,
+    "acwr_status": "LOW",
+    "acwr_percent": 29,
+    "load_tunnel_min": 140.8,
+    "load_tunnel_max": 264.0,
+    "vo2_max": 41.1,
+    "vo2_max_date": "2026-05-18",
+    "fitness_age": null,
+    "race_predictions": {
+      "calendar_date": "2026-05-26",
+      "time_5k_sec": 1828,
+      "time_10k_sec": 3975,
+      "time_half_marathon_sec": 9301,
+      "time_marathon_sec": 21431
+    }
+  },
+  "activities": []
+}
