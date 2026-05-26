@@ -11,6 +11,7 @@ import {
 } from "@/lib/data";
 import { avg, minutesToHm, sportLabel } from "@/lib/format";
 import { computeWeeklyRollup } from "@/lib/training";
+import { splitWeekEntry } from "@/lib/week-entry";
 import { DateNav } from "@/components/date-nav";
 import { DayTile } from "@/components/day-tile";
 import { SleepLegend } from "@/components/sleep-legend";
@@ -61,6 +62,13 @@ export default async function WeekPage({
   // Week training rollup — computed live from the 7 daily JSONs.
   const trainingRollup = computeWeeklyRollup(isoWeek, days);
 
+  // Plan vs Reflection split. Cadence: during the week the entry holds the plan.
+  // End-of-week, Pete appends a `## Reflection` heading and writes the reflection
+  // on the week just lived, then writes the plan for the next week in next week's entry.
+  const { plan, reflection } = entry
+    ? splitWeekEntry(entry.body)
+    : { plan: null, reflection: null };
+
   const avgStats = [
     { label: "avg sleep score", value: avgSleep ?? "—" },
     { label: "avg sleep", value: avgSleepMin != null ? minutesToHm(avgSleepMin) : "—" },
@@ -82,19 +90,7 @@ export default async function WeekPage({
         <p className="text-sm text-muted-foreground">{label}</p>
       </div>
 
-      {entry && (
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground">
-              Weekly reflection
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <MarkdownPanel body={entry.body} />
-          </CardContent>
-        </Card>
-      )}
-
+      {/* Charts first — at-a-glance view of the week */}
       <WeeklyTrainingSection rollup={trainingRollup} />
 
       <div>
@@ -158,6 +154,42 @@ export default async function WeekPage({
           </CardContent>
         </Card>
       </div>
+
+      {/* Write-up: Plan + Reflection. Plan is forward-looking, written at start of week.
+          Reflection is backward-looking, written at end of week. */}
+      {entry && (
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-medium text-muted-foreground">
+              Plan for the week
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <MarkdownPanel body={plan ?? entry.body} />
+          </CardContent>
+        </Card>
+      )}
+
+      {entry && (
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-sm font-medium text-muted-foreground">
+              Reflection on the week
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            {reflection ? (
+              <MarkdownPanel body={reflection} />
+            ) : (
+              <p className="text-sm italic text-muted-foreground">
+                Reflection to be written at end of week. Add a{" "}
+                <code className="rounded bg-muted px-1 py-0.5 text-xs">## Reflection</code>{" "}
+                heading to this week&rsquo;s entry and the section will appear here.
+              </p>
+            )}
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }
