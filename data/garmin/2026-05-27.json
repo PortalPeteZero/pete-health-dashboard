@@ -1,0 +1,80 @@
+{
+  "date": "2026-05-27",
+  "day_of_week": "Wednesday",
+  "recovery_query_date": "2026-05-27",
+  "journal": null,
+  "signoff": {
+    "detected": "23:29",
+    "detected_iso": "2026-05-26T23:29:58.083294+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
+  "sleep": {
+    "score": null,
+    "qualifier": null,
+    "total_min": 0,
+    "deep_min": 0,
+    "rem_min": 0,
+    "light_min": 0,
+    "awake_min": 0
+  },
+  "hrv": {
+    "last_night": null,
+    "last_night_5min_high": null,
+    "weekly_avg": 45,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_5"
+  },
+  "body_battery": {
+    "charged": 1,
+    "drained": 0,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 63,
+    "level": "MODERATE",
+    "feedback_short": "BALANCE_STRESS_AND_RECOVERY",
+    "feedback_long": "MOD_RT_LOW_SS_UNKNOWN_STRESS_HISTORY_NEG"
+  },
+  "daily": {
+    "steps": 31,
+    "step_goal": 3560,
+    "resting_hr": 59,
+    "max_hr": 87,
+    "stress_avg": 26,
+    "floors": 0.0,
+    "distance_m": 25,
+    "active_kcal": 0.0,
+    "total_kcal": 105.0,
+    "intensity_min_moderate": 0,
+    "intensity_min_vigorous": 0,
+    "vo2_max": null
+  },
+  "training": {
+    "status_int": 7,
+    "status_label": "Overreaching",
+    "status_phrase": "PRODUCTIVE_3",
+    "fitness_trend": 3,
+    "primary_sport": "RUNNING",
+    "since_date": "2026-05-26",
+    "acute_load": 169,
+    "chronic_load": 176,
+    "acwr_ratio": 0.9,
+    "acwr_status": "OPTIMAL",
+    "acwr_percent": 38,
+    "load_tunnel_min": 140.8,
+    "load_tunnel_max": 264.0,
+    "vo2_max": 40.9,
+    "vo2_max_date": "2026-05-26",
+    "fitness_age": null,
+    "race_predictions": {
+      "calendar_date": "2026-05-27",
+      "time_5k_sec": 1837,
+      "time_10k_sec": 3994,
+      "time_half_marathon_sec": 9353,
+      "time_marathon_sec": 21567
+    }
+  },
+  "activities": []
+}
