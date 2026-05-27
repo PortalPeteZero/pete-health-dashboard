@@ -4,51 +4,51 @@
   "recovery_query_date": "2026-05-27",
   "journal": null,
   "signoff": {
-    "detected": "23:29",
-    "detected_iso": "2026-05-26T23:29:58.083294+01:00",
+    "detected": "22:25",
+    "detected_iso": "2026-05-26T22:25:25.768904+01:00",
     "confirmed": null,
     "source": "claude-session-activity"
   },
   "sleep": {
-    "score": null,
-    "qualifier": null,
-    "total_min": 0,
-    "deep_min": 0,
-    "rem_min": 0,
-    "light_min": 0,
-    "awake_min": 0
+    "score": 76,
+    "qualifier": "FAIR",
+    "total_min": 540,
+    "deep_min": 88,
+    "rem_min": 121,
+    "light_min": 331,
+    "awake_min": 41
   },
   "hrv": {
-    "last_night": null,
-    "last_night_5min_high": null,
+    "last_night": 40,
+    "last_night_5min_high": 63,
     "weekly_avg": 45,
     "status": "BALANCED",
-    "feedback_phrase": "HRV_BALANCED_5"
+    "feedback_phrase": "HRV_BALANCED_3"
   },
   "body_battery": {
-    "charged": 1,
-    "drained": 0,
+    "charged": 48,
+    "drained": 30,
     "highest": null,
     "lowest": null
   },
   "training_readiness": {
-    "score": 63,
+    "score": 55,
     "level": "MODERATE",
     "feedback_short": "BALANCE_STRESS_AND_RECOVERY",
-    "feedback_long": "MOD_RT_LOW_SS_UNKNOWN_STRESS_HISTORY_NEG"
+    "feedback_long": "MOD_RT_LOW_SS_MOD_STRESS_HISTORY_NEG"
   },
   "daily": {
-    "steps": 31,
+    "steps": 1942,
     "step_goal": 3560,
-    "resting_hr": 59,
-    "max_hr": 87,
-    "stress_avg": 26,
-    "floors": 0.0,
-    "distance_m": 25,
-    "active_kcal": 0.0,
-    "total_kcal": 105.0,
-    "intensity_min_moderate": 0,
-    "intensity_min_vigorous": 0,
+    "resting_hr": 58,
+    "max_hr": 116,
+    "stress_avg": 31,
+    "floors": 2.52329,
+    "distance_m": 14097,
+    "active_kcal": 268.0,
+    "total_kcal": 1846.0,
+    "intensity_min_moderate": 11,
+    "intensity_min_vigorous": 20,
     "vo2_max": null
   },
   "training": {
@@ -58,11 +58,11 @@
     "fitness_trend": 3,
     "primary_sport": "RUNNING",
     "since_date": "2026-05-26",
-    "acute_load": 169,
+    "acute_load": 197,
     "chronic_load": 176,
-    "acwr_ratio": 0.9,
+    "acwr_ratio": 1.1,
     "acwr_status": "OPTIMAL",
-    "acwr_percent": 38,
+    "acwr_percent": 47,
     "load_tunnel_min": 140.8,
     "load_tunnel_max": 264.0,
     "vo2_max": 40.9,
@@ -76,5 +76,114 @@
       "time_marathon_sec": 21567
     }
   },
-  "activities": []
+  "activities": [
+    {
+      "name": "Turbo - Comfortable / Controlled (27 May)",
+      "sport": "indoor_cycling",
+      "start_local": "2026-05-27 17:17:52",
+      "duration_min": 35,
+      "distance_km": 12.51,
+      "avg_hr": 112.0,
+      "max_hr": 126.0,
+      "calories": 291.0,
+      "elevation_gain_m": null,
+      "activity_id": 23033895620,
+      "duration_sec": 2109.742919921875,
+      "distance_m": 12507.490234375,
+      "moving_duration_sec": 2109.742919921875,
+      "aerobic_te": 2.0,
+      "aerobic_te_msg": "MINOR_AEROBIC_BENEFIT_0",
+      "anaerobic_te": 0.0,
+      "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
+      "te_label": "RECOVERY",
+      "training_load": 21.3927001953125,
+      "hr_zones": {
+        "z1": 933,
+        "z2": 0,
+        "z3": 0,
+        "z4": 0,
+        "z5": 0
+      },
+      "hr_zone_total_sec": 933,
+      "avg_speed_mps": 5.927999973297118,
+      "max_speed_mps": 6.69000005722046,
+      "pace_min_per_km": 2.81,
+      "pace_sec_per_100m": 16.9,
+      "moderate_intensity_min": 11,
+      "vigorous_intensity_min": 20,
+      "run_cadence_avg_spm": null,
+      "run_cadence_max_spm": null,
+      "bike_power_avg_w": null,
+      "bike_power_max_w": null,
+      "bike_power_normalized_w": 121.0,
+      "bike_intensity_factor": 0.5379999876022339,
+      "bike_tss": 16.799999237060547,
+      "swim_strokes": 2277.0,
+      "swim_avg_strokes_per_length": null,
+      "swim_cadence_avg_spm": null,
+      "swim_avg_swolf": null,
+      "swim_fastest_100_sec": null,
+      "swim_active_lengths": null,
+      "swim_pool_length_m": null,
+      "lap_count": 7,
+      "splits": [
+        {
+          "split_type": "lap 1",
+          "duration_sec": 300.0,
+          "distance_m": 1788.2,
+          "avg_hr": 95,
+          "max_hr": 104,
+          "avg_speed_mps": 5.960999965667725
+        },
+        {
+          "split_type": "lap 2",
+          "duration_sec": 720.0,
+          "distance_m": 4474.19,
+          "avg_hr": 113,
+          "max_hr": 121,
+          "avg_speed_mps": 6.214000225067139
+        },
+        {
+          "split_type": "lap 3",
+          "duration_sec": 180.0,
+          "distance_m": 815.64,
+          "avg_hr": 116,
+          "max_hr": 126,
+          "avg_speed_mps": 4.531000137329102
+        },
+        {
+          "split_type": "lap 4",
+          "duration_sec": 720.0,
+          "distance_m": 4521.03,
+          "avg_hr": 117,
+          "max_hr": 121,
+          "avg_speed_mps": 6.27899980545044
+        },
+        {
+          "split_type": "lap 5",
+          "duration_sec": 180.0,
+          "distance_m": 876.25,
+          "avg_hr": 114,
+          "max_hr": 120,
+          "avg_speed_mps": 4.868000030517578
+        },
+        {
+          "split_type": "lap 6",
+          "duration_sec": 1.806,
+          "distance_m": 7.3,
+          "avg_hr": 113,
+          "max_hr": 113,
+          "avg_speed_mps": 4.040999889373779
+        },
+        {
+          "split_type": "lap 7",
+          "duration_sec": 7.937,
+          "distance_m": 24.88,
+          "avg_hr": 110,
+          "max_hr": 111,
+          "avg_speed_mps": 3.134000062942505
+        }
+      ]
+    }
+  ]
 }
