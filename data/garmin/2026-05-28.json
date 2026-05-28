@@ -1,0 +1,165 @@
+{
+  "date": "2026-05-28",
+  "day_of_week": "Thursday",
+  "recovery_query_date": "2026-05-28",
+  "journal": null,
+  "signoff": {
+    "detected": "21:59",
+    "detected_iso": "2026-05-27T21:59:48.142218+01:00",
+    "confirmed": null,
+    "source": "claude-session-activity"
+  },
+  "sleep": {
+    "score": 79,
+    "qualifier": "FAIR",
+    "total_min": 502,
+    "deep_min": 70,
+    "rem_min": 81,
+    "light_min": 351,
+    "awake_min": 6
+  },
+  "hrv": {
+    "last_night": 46,
+    "last_night_5min_high": 73,
+    "weekly_avg": 44,
+    "status": "BALANCED",
+    "feedback_phrase": "HRV_BALANCED_6"
+  },
+  "body_battery": {
+    "charged": 50,
+    "drained": 13,
+    "highest": null,
+    "lowest": null
+  },
+  "training_readiness": {
+    "score": 56,
+    "level": "MODERATE",
+    "feedback_short": "BALANCE_STRESS_AND_RECOVERY",
+    "feedback_long": "MOD_RT_LOW_SS_MOD_STRESS_HISTORY_NEG"
+  },
+  "daily": {
+    "steps": 2773,
+    "step_goal": 3560,
+    "resting_hr": 56,
+    "max_hr": 130,
+    "stress_avg": 24,
+    "floors": 5.0,
+    "distance_m": 3818,
+    "active_kcal": 355.0,
+    "total_kcal": 1408.0,
+    "intensity_min_moderate": 0,
+    "intensity_min_vigorous": 0,
+    "vo2_max": null
+  },
+  "training": {
+    "status_int": 7,
+    "status_label": "Overreaching",
+    "status_phrase": "PRODUCTIVE_3",
+    "fitness_trend": 3,
+    "primary_sport": "RUNNING",
+    "since_date": "2026-05-26",
+    "acute_load": 210,
+    "chronic_load": 176,
+    "acwr_ratio": 1.1,
+    "acwr_status": "OPTIMAL",
+    "acwr_percent": 47,
+    "load_tunnel_min": 140.8,
+    "load_tunnel_max": 264.0,
+    "vo2_max": 40.9,
+    "vo2_max_date": "2026-05-26",
+    "fitness_age": null,
+    "race_predictions": {
+      "calendar_date": "2026-05-28",
+      "time_5k_sec": 1839,
+      "time_10k_sec": 3997,
+      "time_half_marathon_sec": 9360,
+      "time_marathon_sec": 21583
+    }
+  },
+  "activities": [
+    {
+      "name": "T\u00edas Open Water Swimming",
+      "sport": "open_water_swimming",
+      "start_local": "2026-05-28 09:29:30",
+      "duration_min": 42,
+      "distance_km": 1.61,
+      "avg_hr": 119.0,
+      "max_hr": 134.0,
+      "calories": 333.0,
+      "elevation_gain_m": null,
+      "activity_id": 23041485235,
+      "duration_sec": 2544.634033203125,
+      "distance_m": 1605.260009765625,
+      "moving_duration_sec": 2542.89599609375,
+      "aerobic_te": 2.5,
+      "aerobic_te_msg": "MAINTAINING_AEROBIC_BASE_7",
+      "anaerobic_te": 0.0,
+      "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
+      "te_label": "AEROBIC_BASE",
+      "training_load": 37.50807189941406,
+      "hr_zones": {
+        "z1": 1741,
+        "z2": 0,
+        "z3": 0,
+        "z4": 0,
+        "z5": 0
+      },
+      "hr_zone_total_sec": 1741,
+      "avg_speed_mps": 0.6309999823570251,
+      "max_speed_mps": 0.9300000071525574,
+      "pace_min_per_km": 26.41,
+      "pace_sec_per_100m": 158.5,
+      "moderate_intensity_min": null,
+      "vigorous_intensity_min": null,
+      "run_cadence_avg_spm": null,
+      "run_cadence_max_spm": null,
+      "bike_power_avg_w": null,
+      "bike_power_max_w": null,
+      "bike_power_normalized_w": null,
+      "bike_intensity_factor": null,
+      "bike_tss": null,
+      "swim_strokes": 1060.0,
+      "swim_avg_strokes_per_length": null,
+      "swim_cadence_avg_spm": 25.0,
+      "swim_avg_swolf": null,
+      "swim_fastest_100_sec": null,
+      "swim_active_lengths": null,
+      "swim_pool_length_m": null,
+      "lap_count": 4,
+      "splits": [
+        {
+          "split_type": "lap 1",
+          "duration_sec": 786.504,
+          "distance_m": 500.0,
+          "avg_hr": 121,
+          "max_hr": 134,
+          "avg_speed_mps": 0.6359999775886536
+        },
+        {
+          "split_type": "lap 2",
+          "duration_sec": 796.896,
+          "distance_m": 500.0,
+          "avg_hr": 124,
+          "max_hr": 133,
+          "avg_speed_mps": 0.6269999742507935
+        },
+        {
+          "split_type": "lap 3",
+          "duration_sec": 795.366,
+          "distance_m": 500.0,
+          "avg_hr": 113,
+          "max_hr": 126,
+          "avg_speed_mps": 0.6290000081062317
+        },
+        {
+          "split_type": "lap 4",
+          "duration_sec": 165.868,
+          "distance_m": 105.26,
+          "avg_hr": 107,
+          "max_hr": 119,
+          "avg_speed_mps": 0.6349999904632567
+        }
+      ]
+    }
+  ]
+}
