@@ -6,7 +6,7 @@
     {
       "time": "09:29",
       "garmin_activity_id": 23041485235,
-      "activity_name": "T\u00edas Open Water Swimming",
+      "activity_name": "Tías Open Water Swimming",
       "sport": "swimming",
       "session_type": "comfortable",
       "distance_km": 1.61,
@@ -14,23 +14,23 @@
       "avg_hr": 119,
       "max_hr": 134,
       "feedback_text": "This mornings swim   I prepped properly last night, signed off work early so I could relax before bed, wind down, and then prepped everything so nothing on my mind. \nHeaded to PDC to meet kimbo this morning and grabbed my bag out of the van and thought, \"this feels lighter than usual\" and then realised i had forgot my wetsuit! \nI then realised I had never swum in the sea without one, and the thought crossed my mind to skip it. But within seconds I remembered all the things I had learned from swimming. If something makes you nervous, it means you need to do it!  I guess the wetsuit always gives me that safety net with the bouyancy.\nKimbo took the piss as usual, started calling me a macho man, and then told me we were heading straight towards the harbour, with a smile on his face. I am sure he did this on purpose. Turning right literally means no way out to the sea, no beach, water really deep, you can't escape. \nIt turns out i had nothing to worry about, and i am so pleased i forgot the wetsuit because the feeling i had of completing this is awesome . I felt so free, my legs especially , my kick felt more connected, my legs didn't sink as I had worried, in fact, I didn't feel any difference in terms of height in water,   my breathing felt more relaxed , maybe less restriction around my chest, it was awesome but super slow! \nIt was also an absolutely stunning swim, the clearest I have ever seen it, literally swimming with massive shoals of fish all around us, it was so incredible! \nIt was bloody freezing when I got in and out, though! That cold water on my skin!!  \nI can't tell you how much this has meant to me today, it's kind of one of those things you think about now and again, \"Can I only do this because of my wetsuit ?\" The answer is NO, I can do it naked! and I loved it!   and I am defo going to make this something i do reault for a change",
-      "headline": "T\u00edas Open Water Swimming \u2014 1.61 km in 42:00 \u2014 avg HR 119 / max 134",
-      "notes_tags": [
-        "open-water",
-        "pdc",
-        "no-wetsuit",
-        "first-no-wetsuit-sea-swim",
-        "milestone",
-        "freezing",
-        "clear-water",
-        "shoals-of-fish",
-        "kimbo",
-        "harbour-direction",
-        "super-slow",
-        "relaxed-breathing",
-        "hip-kick-connected",
-        "breakthrough"
-      ],
+      "headline": "Tías Open Water Swimming — 1.61 km in 42:00 — avg HR 119 / max 134",
+      "notes_tags": ["open-water", "pdc", "no-wetsuit", "first-no-wetsuit-sea-swim", "milestone", "freezing", "clear-water", "shoals-of-fish", "kimbo", "harbour-direction", "super-slow", "relaxed-breathing", "hip-kick-connected", "breakthrough"],
+      "sent_via": "xhale"
+    },
+    {
+      "time": "15:36",
+      "garmin_activity_id": 23045042454,
+      "activity_name": "Yaiza Running",
+      "sport": "running",
+      "session_type": "controlled",
+      "distance_km": 4.17,
+      "duration_min": 30,
+      "avg_hr": 140,
+      "max_hr": 155,
+      "feedback_text": "My legs have actually been feeling a bit better than normal this week, little less stiff, especially the hips, think the bike yesterday helped.\nAnother very hot afternoon\nThis session I wanted to keep to the strict 30 minute rule but just push myself a little bit more\nI know around 4km is 30 mins so i structured it\n1km chilled\n2km controlled\n1km comfortable.\nI changed it on the fly and did the final km controlled also, using the rest of the 30 minute window to drop to chilled, i followed it with a short cooldown walk not recorded.\nSo we actually had\n1km chilled\n3km controlled.\nI felt the plan change was ok, everything felt ok, legs did feel the ache a little and if i was doing more than 30 mins i would have struggled at this pace, but felt it was ok just to give myself a little push this session.\nFinished feeling good and with good energy",
+      "headline": "Yaiza Running — 4.17 km in 30:00 — avg pace 7:11/km — avg HR 140 / max 155",
+      "notes_tags": ["hot", "plan-changed-on-fly", "30-min-cap", "legs-better-than-normal", "hips-less-stiff", "bike-helped", "cooldown-walk-not-recorded", "good-energy-finish"],
       "sent_via": "xhale"
     }
   ]
