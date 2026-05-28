@@ -8,6 +8,7 @@ import { avg, minutesToHm, sportLabel } from "@/lib/format";
 import { DateNav } from "@/components/date-nav";
 import { MonthHeatmap } from "@/components/month-heatmap";
 import { SleepLegend } from "@/components/sleep-legend";
+import { MonthTrendChart } from "@/components/month-trend-chart";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const dynamicParams = false;
@@ -85,6 +86,28 @@ export default async function MonthPage({
         <CardContent>
           <MonthHeatmap year={y} month={m} days={days} />
           <SleepLegend className="mt-3" />
+        </CardContent>
+      </Card>
+
+      {/* Month trend chart — sleep / HRV / RHR over the month */}
+      <Card>
+        <CardHeader className="pb-1">
+          <CardTitle className="text-sm font-bold uppercase tracking-[0.14em] text-muted-foreground">
+            {label} — sleep · HRV · RHR
+          </CardTitle>
+          <p className="text-xs text-muted-foreground">
+            Tap a metric to toggle. Sleep score on left axis (0-100); HRV and RHR on right axis (ms / bpm).
+          </p>
+        </CardHeader>
+        <CardContent>
+          <MonthTrendChart
+            data={days.map((d) => ({
+              date: d.date,
+              sleep: d.sleep.score,
+              hrv: d.hrv.last_night,
+              rhr: d.daily.resting_hr,
+            }))}
+          />
         </CardContent>
       </Card>
 
