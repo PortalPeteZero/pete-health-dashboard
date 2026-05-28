@@ -71,26 +71,24 @@ export default async function MonthPage({
       />
       <h1 className="text-3xl font-bold tracking-tight">{label}</h1>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2">
-          <Card>
-            <CardHeader className="pb-1">
-              <CardTitle className="text-sm font-medium text-muted-foreground">
-                Sleep calendar
-              </CardTitle>
-              <p className="text-xs text-muted-foreground">
-                Each day shows <strong>sleep score</strong>, <strong>hours</strong>,{" "}
-                <strong>HRV</strong>, <strong>RHR</strong> and <strong>finished work time</strong>.
-                Tile colour grades the score. Tap a day for the full breakdown.
-              </p>
-            </CardHeader>
-            <CardContent>
-              <MonthHeatmap year={y} month={m} days={days} />
-              <SleepLegend className="mt-3" />
-            </CardContent>
-          </Card>
-        </div>
-        <div className="space-y-4">
+      <Card>
+        <CardHeader className="pb-1">
+          <CardTitle className="text-sm font-bold uppercase tracking-[0.14em] text-muted-foreground">
+            Sleep calendar
+          </CardTitle>
+          <p className="text-xs text-muted-foreground">
+            Each day shows <strong>sleep score</strong>, <strong>hours</strong>,{" "}
+            <strong>HRV</strong>, <strong>RHR</strong> and <strong>finished work time</strong>. Tile
+            colour grades the score. Tap a day for the full breakdown.
+          </p>
+        </CardHeader>
+        <CardContent>
+          <MonthHeatmap year={y} month={m} days={days} />
+          <SleepLegend className="mt-3" />
+        </CardContent>
+      </Card>
+
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -149,7 +147,6 @@ export default async function MonthPage({
               )}
             </CardContent>
           </Card>
-        </div>
       </div>
     </div>
   );
