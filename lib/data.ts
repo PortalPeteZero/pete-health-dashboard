@@ -9,10 +9,12 @@ import {
   format,
   eachDayOfInterval,
 } from "date-fns";
-import type { GarminDay, WeeklySummary } from "./types";
+import type { GarminDay, WeeklySummary, TrainingZones, FeedbackEntry } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data", "garmin");
 const WEEKLY_DIR = path.join(process.cwd(), "data", "weekly");
+const ZONES_FILE = path.join(process.cwd(), "data", "training-zones.json");
+const COACHING_DIR = path.join(process.cwd(), "data", "coaching");
 
 // ---- Daily ----
 
@@ -174,4 +176,39 @@ export function navigatePrevMonth(year: number, month: number): { year: number; 
 
 export function navigateNextMonth(year: number, month: number): { year: number; month: number } {
   return month === 12 ? { year: year + 1, month: 1 } : { year, month: month + 1 };
+}
+
+// ---- Training zones (Passion Fit) ----
+
+export function getTrainingZones(): TrainingZones | null {
+  if (!fs.existsSync(ZONES_FILE)) return null;
+  return JSON.parse(fs.readFileSync(ZONES_FILE, "utf8")) as TrainingZones;
+}
+
+// ---- Coaching feedback (SST) ----
+
+export function getAllFeedbackDates(): string[] {
+  if (!fs.existsSync(COACHING_DIR)) return [];
+  return fs
+    .readdirSync(COACHING_DIR)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => f.replace(".json", ""))
+    .sort();
+}
+
+export function getFeedback(date: string): FeedbackEntry | null {
+  const fp = path.join(COACHING_DIR, `${date}.json`);
+  if (!fs.existsSync(fp)) return null;
+  return JSON.parse(fs.readFileSync(fp, "utf8")) as FeedbackEntry;
+}
+
+export function getLatestFeedbackDate(): string | null {
+  const all = getAllFeedbackDates();
+  return all.length > 0 ? all[all.length - 1] : null;
+}
+
+export function getAllFeedback(): FeedbackEntry[] {
+  return getAllFeedbackDates()
+    .map((d) => getFeedback(d))
+    .filter((f): f is FeedbackEntry => f !== null);
 }

@@ -179,3 +179,58 @@ export interface WeeklySummary {
   frontmatter: Record<string, unknown>;
   body: string;
 }
+
+// ---- Passion Fit training zones ----
+
+export interface TrainingZone {
+  name: string;
+  slug: string;
+  definition: string;
+  feel: string;
+  rpe: string;
+  bike_hr: string;
+  bike_power_w: string;
+  run_hr: string;
+  run_pace_per_km: string;
+  treadmill_kph: string;
+  use_cases: string;
+}
+
+export interface TrainingZones {
+  schema_version: number;
+  athlete: string;
+  calibration_date: string;
+  status: "active" | "outdated-needs-refresh";
+  outdated_reason?: string;
+  framework: string;
+  framework_anchor: string;
+  power_notation: string;
+  zones: TrainingZone[];
+}
+
+// ---- Coaching feedback (SST) ----
+
+export interface FeedbackSessionEntry {
+  time: string;
+  garmin_activity_id?: number | null;
+  activity_name?: string;
+  sport: string;
+  session_type: string;
+  distance_km?: number;
+  duration_min?: number;
+  avg_hr?: number;
+  max_hr?: number;
+  effort_perceived?: number;
+  feedback_text: string;
+  headline?: string;
+  notes_tags?: string[];
+  sent_via?: string;
+}
+
+export interface FeedbackEntry {
+  schema_version: number;
+  date: string;
+  garmin_tracked: boolean;
+  pending_garmin_backfill?: boolean;
+  entries: FeedbackSessionEntry[];
+}
