@@ -2,7 +2,22 @@
   "date": "2026-05-28",
   "day_of_week": "Thursday",
   "recovery_query_date": "2026-05-28",
-  "journal": null,
+  "journal": {
+    "date": "2026-05-28",
+    "exists": true,
+    "frontmatter": {
+      "type": "pf-journal",
+      "date": "2026-05-28",
+      "day_of_week": "Thursday",
+      "tags": [
+        "passion-fit",
+        "journal",
+        "framework",
+        "hf-matrix"
+      ]
+    },
+    "body": "# Journal, Thursday, 28 May 2026\n\n## Recovery (Garmin, last night)\n\n- Sleep score **79 FAIR**, total **8h 22m**.\n- HRV **46** last night (weekly avg **44**), **BALANCED**.\n- RHR **56**.\n\nFelt really good and positive today and acted on it. More \"good\" energy than I have had this week. Think this is linked to my earlier than normal sign off last night and more wind down time. The swim this morning no doubt helped frame the rest of the day.\n\n## IPSATIVE goals\n\n- **Yesterday's micro-goal**: protect the evening. Charged work parked by 21:00, proper wind down, lights out at a sensible hour.\n- **Clean Y/N: Yes.** Signed off early, wind down went well, slept 8h 22m, body was actually able to do the morning swim and the afternoon run cleanly.\n\n- **Tonight's commitment** (separate from tomorrow's IPSATIVE): protect this evening, same lever as last night. Stay disciplined into the streak.\n\n- **Tomorrow's micro-goal**: last working day before Monday's all-team meeting and the start of back-to-back trips. A lot to do, probably too much. So the focus is behaviour, not volume. Delegate early so the deferrable stuff is off my plate before lunch. Every \"I need to do X\" goes through a need-vs-want / required-vs-whim check before I touch it. Prioritise properly, communicate properly, delegate properly.\n- **Clean Y/N tomorrow evening**: was delegation done before lunch, and did I work to a priority list rather than reacting?\n\n## Commitment Continuum, today's position\n\n**Committed.** For the first time this week I have not felt it's only the plan keeping me on track. Felt committed, possibly compelled in places. A few days of consistency under the belt does wonders.\n\n## Ownership\n\nThe good day was owed to a string of small calls I made, not to circumstance. Yesterday's lesson was self-written, self-applied the same night. The swim happened despite the no-wetsuit moment giving me an easy out, and the breakthrough was real. The run was a deliberate decision to push inside the 30 minute cap, and I adjusted on the fly when the comfortable km could clearly be another controlled. Nothing about today was handed to me.\n\n## Control the Controllables\n\nControlled what was mine to control today. None slipped.\n\n## HF Matrix, today's position\n\n**HIGH FUNCTIONING.** Confident, motivated, productive. Decisions felt clear, communication was clean, I followed through on what I set out to do.\n\n## One lesson for tomorrow\n\n**Consistency compounds. A few days strung together moves me from compliant to committed in a way no single big effort can. The lever stays the same, protect the evening so the next day can land, and the win is the streak, not the one good day.**\n\n## Cross-links\n\n- Garmin day: [[Personal/health/garmin/2026-05-28]]\n- Training feedback: [[Personal/passion-fit/coaching/feedback/2026-05-28]] (multi-session day, swim + run)"
+  },
   "signoff": {
     "detected": "21:59",
     "detected_iso": "2026-05-27T21:59:48.142218+01:00",
