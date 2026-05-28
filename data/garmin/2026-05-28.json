@@ -133,7 +133,14 @@
           "distance_m": 1000.0,
           "avg_hr": 124,
           "max_hr": 137,
-          "avg_speed_mps": 2.0999999046325684
+          "avg_speed_mps": 2.0999999046325684,
+          "avg_power_w": 247,
+          "max_power_w": 554,
+          "normalized_power_w": 248,
+          "avg_cadence": 146,
+          "max_cadence": 152,
+          "elevation_gain_m": 20.0,
+          "calories": 76.0
         },
         {
           "split_type": "lap 2",
@@ -141,7 +148,14 @@
           "distance_m": 1000.0,
           "avg_hr": 138,
           "max_hr": 143,
-          "avg_speed_mps": 2.4140000343322754
+          "avg_speed_mps": 2.4140000343322754,
+          "avg_power_w": 256,
+          "max_power_w": 359,
+          "normalized_power_w": 257,
+          "avg_cadence": 153,
+          "max_cadence": 158,
+          "elevation_gain_m": 12.0,
+          "calories": 77.0
         },
         {
           "split_type": "lap 3",
@@ -149,7 +163,14 @@
           "distance_m": 1000.0,
           "avg_hr": 145,
           "max_hr": 150,
-          "avg_speed_mps": 2.3919999599456787
+          "avg_speed_mps": 2.3919999599456787,
+          "avg_power_w": 259,
+          "max_power_w": 307,
+          "normalized_power_w": 260,
+          "avg_cadence": 154,
+          "max_cadence": 157,
+          "elevation_gain_m": 5.0,
+          "calories": 79.0
         },
         {
           "split_type": "lap 4",
@@ -157,7 +178,14 @@
           "distance_m": 1000.0,
           "avg_hr": 151,
           "max_hr": 155,
-          "avg_speed_mps": 2.364000082015991
+          "avg_speed_mps": 2.364000082015991,
+          "avg_power_w": 262,
+          "max_power_w": 336,
+          "normalized_power_w": 264,
+          "avg_cadence": 155,
+          "max_cadence": 160,
+          "elevation_gain_m": 14.0,
+          "calories": 81.0
         },
         {
           "split_type": "lap 5",
@@ -165,7 +193,14 @@
           "distance_m": 171.08,
           "avg_hr": 151,
           "max_hr": 155,
-          "avg_speed_mps": 2.440000057220459
+          "avg_speed_mps": 2.440000057220459,
+          "avg_power_w": 289,
+          "max_power_w": 370,
+          "normalized_power_w": 274,
+          "avg_cadence": 156,
+          "max_cadence": 160,
+          "elevation_gain_m": 1.0,
+          "calories": 14.0
         }
       ]
     },
@@ -225,7 +260,14 @@
           "distance_m": 500.0,
           "avg_hr": 121,
           "max_hr": 134,
-          "avg_speed_mps": 0.6359999775886536
+          "avg_speed_mps": 0.6359999775886536,
+          "avg_power_w": null,
+          "max_power_w": null,
+          "normalized_power_w": null,
+          "avg_cadence": null,
+          "max_cadence": null,
+          "elevation_gain_m": null,
+          "calories": 126.0
         },
         {
           "split_type": "lap 2",
@@ -233,7 +275,14 @@
           "distance_m": 500.0,
           "avg_hr": 124,
           "max_hr": 133,
-          "avg_speed_mps": 0.6269999742507935
+          "avg_speed_mps": 0.6269999742507935,
+          "avg_power_w": null,
+          "max_power_w": null,
+          "normalized_power_w": null,
+          "avg_cadence": null,
+          "max_cadence": null,
+          "elevation_gain_m": null,
+          "calories": 120.0
         },
         {
           "split_type": "lap 3",
@@ -241,7 +290,14 @@
           "distance_m": 500.0,
           "avg_hr": 113,
           "max_hr": 126,
-          "avg_speed_mps": 0.6290000081062317
+          "avg_speed_mps": 0.6290000081062317,
+          "avg_power_w": null,
+          "max_power_w": null,
+          "normalized_power_w": null,
+          "avg_cadence": null,
+          "max_cadence": null,
+          "elevation_gain_m": null,
+          "calories": 76.0
         },
         {
           "split_type": "lap 4",
@@ -249,7 +305,14 @@
           "distance_m": 105.26,
           "avg_hr": 107,
           "max_hr": 119,
-          "avg_speed_mps": 0.6349999904632567
+          "avg_speed_mps": 0.6349999904632567,
+          "avg_power_w": null,
+          "max_power_w": null,
+          "normalized_power_w": null,
+          "avg_cadence": null,
+          "max_cadence": null,
+          "elevation_gain_m": null,
+          "calories": 12.0
         }
       ]
     }

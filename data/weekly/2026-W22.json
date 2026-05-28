@@ -53,7 +53,7 @@
     },
     "intensity_min_moderate": 29,
     "intensity_min_vigorous": 20,
-    "acwr_avg": 1.0,
+    "acwr_avg": 1.05,
     "acwr_count": 4,
     "status_phrases": [
       "MAINTAINING_2",

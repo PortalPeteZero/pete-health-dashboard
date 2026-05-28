@@ -73,11 +73,11 @@
     "fitness_trend": 3,
     "primary_sport": "RUNNING",
     "since_date": "2026-05-26",
-    "acute_load": 169,
+    "acute_load": 197,
     "chronic_load": 176,
-    "acwr_ratio": 0.9,
+    "acwr_ratio": 1.1,
     "acwr_status": "OPTIMAL",
-    "acwr_percent": 38,
+    "acwr_percent": 47,
     "load_tunnel_min": 140.8,
     "load_tunnel_max": 264.0,
     "vo2_max": 40.9,
@@ -148,7 +148,14 @@
           "distance_m": 1788.2,
           "avg_hr": 95,
           "max_hr": 104,
-          "avg_speed_mps": 5.960999965667725
+          "avg_speed_mps": 5.960999965667725,
+          "avg_power_w": 89,
+          "max_power_w": 140,
+          "normalized_power_w": 92,
+          "avg_cadence": 67,
+          "max_cadence": 70,
+          "elevation_gain_m": null,
+          "calories": 34.0
         },
         {
           "split_type": "lap 2",
@@ -156,7 +163,14 @@
           "distance_m": 4474.19,
           "avg_hr": 113,
           "max_hr": 121,
-          "avg_speed_mps": 6.214000225067139
+          "avg_speed_mps": 6.214000225067139,
+          "avg_power_w": 126,
+          "max_power_w": 149,
+          "normalized_power_w": 126,
+          "avg_cadence": 70,
+          "max_cadence": 74,
+          "elevation_gain_m": null,
+          "calories": 109.0
         },
         {
           "split_type": "lap 3",
@@ -164,7 +178,14 @@
           "distance_m": 815.64,
           "avg_hr": 116,
           "max_hr": 126,
-          "avg_speed_mps": 4.531000137329102
+          "avg_speed_mps": 4.531000137329102,
+          "avg_power_w": 67,
+          "max_power_w": 125,
+          "normalized_power_w": 76,
+          "avg_cadence": 52,
+          "max_cadence": 69,
+          "elevation_gain_m": null,
+          "calories": 16.0
         },
         {
           "split_type": "lap 4",
@@ -172,7 +193,14 @@
           "distance_m": 4521.03,
           "avg_hr": 117,
           "max_hr": 121,
-          "avg_speed_mps": 6.27899980545044
+          "avg_speed_mps": 6.27899980545044,
+          "avg_power_w": 132,
+          "max_power_w": 213,
+          "normalized_power_w": 131,
+          "avg_cadence": 68,
+          "max_cadence": 72,
+          "elevation_gain_m": null,
+          "calories": 112.0
         },
         {
           "split_type": "lap 5",
@@ -180,7 +208,14 @@
           "distance_m": 876.25,
           "avg_hr": 114,
           "max_hr": 120,
-          "avg_speed_mps": 4.868000030517578
+          "avg_speed_mps": 4.868000030517578,
+          "avg_power_w": 81,
+          "max_power_w": 187,
+          "normalized_power_w": 98,
+          "avg_cadence": 54,
+          "max_cadence": 70,
+          "elevation_gain_m": null,
+          "calories": 19.0
         },
         {
           "split_type": "lap 6",
@@ -188,7 +223,14 @@
           "distance_m": 7.3,
           "avg_hr": 113,
           "max_hr": 113,
-          "avg_speed_mps": 4.040999889373779
+          "avg_speed_mps": 4.040999889373779,
+          "avg_power_w": null,
+          "max_power_w": null,
+          "normalized_power_w": 72,
+          "avg_cadence": null,
+          "max_cadence": null,
+          "elevation_gain_m": null,
+          "calories": 0.0
         },
         {
           "split_type": "lap 7",
@@ -196,7 +238,14 @@
           "distance_m": 24.88,
           "avg_hr": 110,
           "max_hr": 111,
-          "avg_speed_mps": 3.134000062942505
+          "avg_speed_mps": 3.134000062942505,
+          "avg_power_w": null,
+          "max_power_w": null,
+          "normalized_power_w": 54,
+          "avg_cadence": null,
+          "max_cadence": null,
+          "elevation_gain_m": null,
+          "calories": 0.0
         }
       ]
     }
