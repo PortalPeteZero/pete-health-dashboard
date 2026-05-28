@@ -42,7 +42,7 @@
   },
   "body_battery": {
     "charged": 50,
-    "drained": 35,
+    "drained": 39,
     "highest": null,
     "lowest": null
   },
@@ -53,15 +53,15 @@
     "feedback_long": "MOD_RT_LOW_SS_MOD_STRESS_HISTORY_NEG"
   },
   "daily": {
-    "steps": 8491,
+    "steps": 9010,
     "step_goal": 3560,
     "resting_hr": 56,
     "max_hr": 152,
-    "stress_avg": 25,
+    "stress_avg": 32,
     "floors": 24.47375,
-    "distance_m": 9055,
-    "active_kcal": 690.0,
-    "total_kcal": 2123.0,
+    "distance_m": 9480,
+    "active_kcal": 717.0,
+    "total_kcal": 2150.0,
     "intensity_min_moderate": 16,
     "intensity_min_vigorous": 0,
     "vo2_max": null
