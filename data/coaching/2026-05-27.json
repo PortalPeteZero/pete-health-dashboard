@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-27",
+  "garmin_tracked": true,
+  "entries": [
+    {
+      "time": "09:30",
+      "garmin_activity_id": null,
+      "activity_name": "Missed morning bike (explanation)",
+      "sport": "cycling",
+      "session_type": "missed",
+      "feedback_text": "Hi Loren, thought I'd better explain why I wasn't there.\nwhat a totally awful night, I got myself so worked up I literally could not get to sleep at all , I was wide awake fighting with myself, it got worse and worse like a spiral and i got myself into a right mess, I just couldnt control it , I was so desperate to get to sleep and to make the session and not let youor myself down but the more I fought to sleep the worse it got, the latest time I remember was about 3am , so think i got to sleep at 3am and then the alarm went off at 5am,  I got up and started to get ready but could barley stand up properly,  I lay back on the bed and fought with myself some more , in a mess. I then decided getting on the bike after 2 hours sleep would be for all the wrong reasons at this stage and went back to sleep, thankfully I slept like a baby and have just woken up at 9.30 am",
+      "headline": "Morning session missed \u2014 sleep spiral note to Loren",
+      "notes_tags": [
+        "missed-session",
+        "sleep-spiral"
+      ],
+      "sent_via": "xhale"
+    },
+    {
+      "time": "17:17",
+      "garmin_activity_id": 23033895620,
+      "activity_name": "Turbo - Comfortable / Controlled (27 May)",
+      "sport": "cycling",
+      "session_type": "comfortable",
+      "distance_km": 12.51,
+      "duration_min": 35,
+      "avg_hr": 112,
+      "max_hr": 126,
+      "feedback_text": "Taking a bit of inspiration from the posted set, I set myself a short workout just to get back on the bike and try the TT on the trainer for the first time , similar to the runs, just get on it for a bit .\n5mins warm up then 12 mins comfortable 2 mins chilled x 2 . \ngave me 35 mins on the bike, think it was actually enough today anyway, gave my legs a spin , gave everythig a full test, bit uncomfortable and twitch, hard to settle but within expectations. \nI wouldn't say I rescued the day, but I pulled it back a bit .",
+      "headline": "Turbo - Comfortable / Controlled (27 May) \u2014 12.51 km in 35:00 \u2014 avg HR 112 / max 126",
+      "notes_tags": [
+        "turbo",
+        "indoor",
+        "recovery",
+        "rescued-day",
+        "first-tt-trainer",
+        "missed-morning-session"
+      ],
+      "sent_via": "xhale"
+    }
+  ]
+}

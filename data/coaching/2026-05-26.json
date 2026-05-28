@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-26",
+  "garmin_tracked": true,
+  "entries": [
+    {
+      "time": "15:36",
+      "garmin_activity_id": 23020091268,
+      "activity_name": "Yaiza Running",
+      "sport": "running",
+      "session_type": "comfortable",
+      "distance_km": 3.93,
+      "duration_min": 30,
+      "avg_hr": 133,
+      "max_hr": 154,
+      "feedback_text": "Hot one today\nLegs felt a little stiff before the run, so was a little apprehensive about this.\n1 km chilled, then 3 km comfortable, although felt a bit like I was edging into controlled in places. It was the right effort for the length, but when I go longer, need to ease off a bit.\nDid actually run up the steep hill near my house to finish off, and it felt good \nLap      Distance   Avg Pace   Avg HR   Max HR\n          (km)      (min/km)    (bpm)    (bpm)\n1         1.00       8:05        120      130\n2         1.00       7:32        132      136\n3         1.00       7:37        137      142\n4         0.93       7:17        144      154\nSummary   3.93       7:38        133      154",
+      "headline": "Yaiza Running \u2014 3.93 km in 30:00 \u2014 avg HR 133 / max 154",
+      "notes_tags": [
+        "hot",
+        "hilly-finish",
+        "stiff-legs",
+        "edging-controlled",
+        "negative-split"
+      ],
+      "sent_via": "xhale"
+    }
+  ]
+}

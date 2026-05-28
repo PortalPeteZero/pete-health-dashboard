@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-18",
+  "garmin_tracked": true,
+  "entries": [
+    {
+      "time": "10:34",
+      "garmin_activity_id": 22921532984,
+      "activity_name": "Wigan Running",
+      "sport": "running",
+      "session_type": "progressive",
+      "distance_km": 4.02,
+      "duration_min": 28,
+      "avg_hr": 128,
+      "max_hr": 146,
+      "feedback_text": "Just a quick run while I could grab 30 mins before heading to the conference, I did it quite simple\n1km chilled \n1km comfortable\n1km controlled\n1km upper controlled \neverything felt really good and emembered ot bring gloves to keep my hands warm \nhard to comapre against anything else, cold which is not the norm for me , and unliek nearly all my runs at home this was climbing out and downhill back so the complete opposite of what i am used to .",
+      "headline": "Wigan Running \u2014 4.02 km in 28:00 \u2014 avg HR 128 / max 146",
+      "notes_tags": [
+        "progressive",
+        "uk-trip",
+        "conference",
+        "cold",
+        "hilly",
+        "climb-out",
+        "downhill-back",
+        "gloves"
+      ],
+      "sent_via": "xhale"
+    }
+  ]
+}

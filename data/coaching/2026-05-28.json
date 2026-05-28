@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-28",
+  "garmin_tracked": true,
+  "entries": [
+    {
+      "time": "09:29",
+      "garmin_activity_id": 23041485235,
+      "activity_name": "T\u00edas Open Water Swimming",
+      "sport": "swimming",
+      "session_type": "comfortable",
+      "distance_km": 1.61,
+      "duration_min": 42,
+      "avg_hr": 119,
+      "max_hr": 134,
+      "feedback_text": "This mornings swim   I prepped properly last night, signed off work early so I could relax before bed, wind down, and then prepped everything so nothing on my mind. \nHeaded to PDC to meet kimbo this morning and grabbed my bag out of the van and thought, \"this feels lighter than usual\" and then realised i had forgot my wetsuit! \nI then realised I had never swum in the sea without one, and the thought crossed my mind to skip it. But within seconds I remembered all the things I had learned from swimming. If something makes you nervous, it means you need to do it!  I guess the wetsuit always gives me that safety net with the bouyancy.\nKimbo took the piss as usual, started calling me a macho man, and then told me we were heading straight towards the harbour, with a smile on his face. I am sure he did this on purpose. Turning right literally means no way out to the sea, no beach, water really deep, you can't escape. \nIt turns out i had nothing to worry about, and i am so pleased i forgot the wetsuit because the feeling i had of completing this is awesome . I felt so free, my legs especially , my kick felt more connected, my legs didn't sink as I had worried, in fact, I didn't feel any difference in terms of height in water,   my breathing felt more relaxed , maybe less restriction around my chest, it was awesome but super slow! \nIt was also an absolutely stunning swim, the clearest I have ever seen it, literally swimming with massive shoals of fish all around us, it was so incredible! \nIt was bloody freezing when I got in and out, though! That cold water on my skin!!  \nI can't tell you how much this has meant to me today, it's kind of one of those things you think about now and again, \"Can I only do this because of my wetsuit ?\" The answer is NO, I can do it naked! and I loved it!   and I am defo going to make this something i do reault for a change",
+      "headline": "T\u00edas Open Water Swimming \u2014 1.61 km in 42:00 \u2014 avg HR 119 / max 134",
+      "notes_tags": [
+        "open-water",
+        "pdc",
+        "no-wetsuit",
+        "first-no-wetsuit-sea-swim",
+        "milestone",
+        "freezing",
+        "clear-water",
+        "shoals-of-fish",
+        "kimbo",
+        "harbour-direction",
+        "super-slow",
+        "relaxed-breathing",
+        "hip-kick-connected",
+        "breakthrough"
+      ],
+      "sent_via": "xhale"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-25",
+  "garmin_tracked": true,
+  "entries": [
+    {
+      "time": "07:59",
+      "garmin_activity_id": 23004504579,
+      "activity_name": "Pool Swim",
+      "sport": "swimming",
+      "session_type": "drills",
+      "distance_km": 2.0,
+      "duration_min": 69,
+      "avg_hr": 116,
+      "max_hr": 160,
+      "feedback_text": "8 am start for the group session. Felt tired this morning. \nToday was good and bad.\nI practised what we talked about with my head and the crane arm. Sometimes it felt good; other times it felt out of sync.\nThe one positive thing today, though, was that I really got the hang of rotating with my hips. I could really feel my hips driving the action, and for the first time I felt I was kicking as I did it. I have previously found this challenging, a bit like patting my head and rubbing my tummy to keep my legs kicking and to remember to rotate my hips, but it felt more connected today. \nIt's hard to recall the whole session. Everything is coming at me in Spanish. By the time my head has translated it, I am setting off late, and Kimbo is shouting at me, so it felt a bit chaotic today, lol! \n300m warm up\n300 drill of choice , I did stroke drill, (6 kicks then 4 strokes) \nThen we did various length progressive, think it was 4 x 50 with each building on the last\n4 x 50 with some effort but all the same, consistent the last one had to be the same as first .\nWe then did some work with fins , in particular focusing on pushing off the wall but staying under the water \nSnorkel, pull buoy and paddles \n15 m back stroke with paddles, focusing on keeping body straight but using the arms correctly, hard to describe, but kind of bent arms focus on elbow and pushing the water back \nFollowed by a normal paddle swim \nMore progressive work and then cool down .\nFound it hard today, was a little lazy and took too many wall breaks when i probably didnt need them.",
+      "headline": "Pool Swim \u2014 2.0 km in 69:00 \u2014 avg HR 116 / max 160",
+      "notes_tags": [
+        "group",
+        "kimbo",
+        "drills",
+        "technique",
+        "head-position",
+        "hip-rotation",
+        "fins",
+        "snorkel",
+        "pull-buoy",
+        "paddles",
+        "backstroke",
+        "progressive",
+        "lazy",
+        "tired"
+      ],
+      "sent_via": "xhale"
+    }
+  ]
+}
