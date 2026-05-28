@@ -5,6 +5,7 @@ import {
   getAllDates,
   navigatePrev,
   navigateNext,
+  getFeedback,
 } from "@/lib/data";
 import { prettyDate } from "@/lib/format";
 import { DateNav } from "@/components/date-nav";
@@ -13,7 +14,9 @@ import { TrainingStatusCard } from "@/components/training-status-card";
 import { AcwrGauge } from "@/components/acwr-gauge";
 import { Vo2Sparkline } from "@/components/vo2-sparkline";
 import { RacePredictionsCard } from "@/components/race-predictions-card";
+import { FeedbackBox, UnpairedFeedbackBox } from "@/components/feedback-box";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import type { FeedbackSessionEntry } from "@/lib/types";
 
 export const dynamicParams = false;
 
@@ -46,8 +49,6 @@ export default async function TrainingPage({
     .map((d) => ({ value: d, label: shortLabel(d), href: `/training/${d}` }));
 
   // VO2 series — collect the last 90 days' vo2_max from the training block.
-  // Note: Garmin only re-computes VO2 occasionally (every couple of weeks),
-  // so most days carry the same number — we plot the unique-changes curve.
   const allDates = getAllDates();
   const idx = allDates.indexOf(date);
   const window = allDates.slice(Math.max(0, idx - 89), idx + 1);
@@ -58,10 +59,25 @@ export default async function TrainingPage({
   const training = day.training;
   const activities = day.activities || [];
 
+  // Coaching feedback for this date — match each entry to its activity by garmin_activity_id.
+  const feedback = getFeedback(date);
+  const feedbackByActivityId = new Map<number, FeedbackSessionEntry>();
+  const unpairedEntries: FeedbackSessionEntry[] = [];
+  if (feedback) {
+    for (const entry of feedback.entries) {
+      const aid = entry.garmin_activity_id;
+      if (aid != null) {
+        feedbackByActivityId.set(aid, entry);
+      } else if (entry.feedback_text) {
+        unpairedEntries.push(entry);
+      }
+    }
+  }
+
   return (
     <div className="space-y-6">
       <header className="space-y-1">
-        <h1 className="text-2xl font-semibold tracking-tight">{prettyDate(date)}</h1>
+        <h1 className="text-3xl font-bold tracking-tight">{prettyDate(date)}</h1>
         <p className="text-sm text-muted-foreground">Training</p>
       </header>
 
@@ -91,8 +107,22 @@ export default async function TrainingPage({
         <RacePredictionsCard predictions={training?.race_predictions} />
       </section>
 
+      {/* Notes-to-Loren that aren't tied to a specific Garmin activity (e.g. missed-session explanations) */}
+      {unpairedEntries.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="text-sm font-bold uppercase tracking-[0.14em] text-muted-foreground">
+            Notes to Loren
+          </h2>
+          <div className="space-y-3">
+            {unpairedEntries.map((entry, i) => (
+              <UnpairedFeedbackBox key={i} entry={entry} />
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="space-y-3">
-        <h2 className="text-sm font-medium uppercase tracking-wide text-muted-foreground">
+        <h2 className="text-sm font-bold uppercase tracking-[0.14em] text-muted-foreground">
           Sessions ({activities.length})
         </h2>
         {activities.length === 0 ? (
@@ -109,13 +139,23 @@ export default async function TrainingPage({
             </CardContent>
           </Card>
         ) : (
-          <div className="space-y-4">
-            {activities.map((a, i) => (
-              <ActivityCard key={i} activity={a} />
-            ))}
+          <div className="space-y-6">
+            {activities.map((a, i) => {
+              const feedbackEntry = a.activity_id ? feedbackByActivityId.get(a.activity_id) : null;
+              return (
+                <div key={i} className="space-y-3">
+                  <ActivityCard activity={a} />
+                  {feedbackEntry && feedbackEntry.feedback_text && (
+                    <FeedbackBox entry={feedbackEntry} />
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
       </section>
     </div>
   );
 }
+
+

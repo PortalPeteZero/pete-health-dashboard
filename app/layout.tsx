@@ -38,7 +38,6 @@ export default function RootLayout({
     { label: "Week", href: `/week/${week}`, match: "/week" },
     { label: "Month", href: `/month/${year}/${month}`, match: "/month" },
     { label: "90 days", href: "/90-days", match: "/90-days" },
-    { label: "SST", href: "/sst", match: "/sst" },
     { label: "Zones", href: "/zones", match: "/zones" },
     { label: "Reports", href: "/reports", match: "/reports" },
     { label: "Coach", href: "/coach", match: "/coach" },
