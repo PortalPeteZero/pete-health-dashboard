@@ -12,6 +12,14 @@ export interface ActivitySplit {
   avg_hr: number | null;
   max_hr: number | null;
   avg_speed_mps: number | null;
+  // New rich fields (post 2026-05-28; older days lack them).
+  avg_power_w?: number | null;
+  max_power_w?: number | null;
+  normalized_power_w?: number | null;
+  avg_cadence?: number | null;
+  max_cadence?: number | null;
+  elevation_gain_m?: number | null;
+  calories?: number | null;
 }
 
 export interface HRZones {
