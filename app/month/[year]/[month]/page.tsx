@@ -51,9 +51,16 @@ export default async function MonthPage({
     (a, d) => a + d.activities.reduce((s, x) => s + x.duration_min, 0),
     0,
   );
-  const bySport = new Map<string, number>();
-  for (const d of days)
-    for (const a of d.activities) bySport.set(a.sport, (bySport.get(a.sport) ?? 0) + 1);
+  // Sport totals: count + total duration_min per sport.
+  const bySport = new Map<string, { count: number; mins: number }>();
+  for (const d of days) {
+    for (const a of d.activities) {
+      const cur = bySport.get(a.sport) ?? { count: 0, mins: 0 };
+      cur.count += 1;
+      cur.mins += a.duration_min || 0;
+      bySport.set(a.sport, cur);
+    }
+  }
 
   return (
     <div className="space-y-6">
@@ -62,7 +69,7 @@ export default async function MonthPage({
         prevHref={monthsWithData.has(prevKey) ? `/month/${prev.year}/${prev.month}` : null}
         nextHref={monthsWithData.has(nextKey) ? `/month/${next.year}/${next.month}` : null}
       />
-      <h1 className="text-2xl font-bold">{label}</h1>
+      <h1 className="text-3xl font-bold tracking-tight">{label}</h1>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2">
@@ -72,8 +79,9 @@ export default async function MonthPage({
                 Sleep calendar
               </CardTitle>
               <p className="text-xs text-muted-foreground">
-                Each day shows its <strong>sleep score</strong> and <strong>hours asleep</strong>;
-                the tile colour grades the score. Tap a day for the full breakdown.
+                Each day shows <strong>sleep score</strong>, <strong>hours</strong>,{" "}
+                <strong>HRV</strong>, <strong>RHR</strong> and <strong>finished work time</strong>.
+                Tile colour grades the score. Tap a day for the full breakdown.
               </p>
             </CardHeader>
             <CardContent>
@@ -113,16 +121,31 @@ export default async function MonthPage({
               {bySport.size === 0 ? (
                 <p className="text-sm text-muted-foreground">None.</p>
               ) : (
-                <ul className="space-y-1 text-sm">
-                  {Array.from(bySport.entries())
-                    .sort((a, b) => b[1] - a[1])
-                    .map(([sport, n]) => (
-                      <li key={sport} className="flex justify-between">
-                        <span>{sportLabel(sport)}</span>
-                        <span className="tabular-nums text-muted-foreground">{n}</span>
-                      </li>
-                    ))}
-                </ul>
+                <>
+                  <ul className="space-y-2 text-sm">
+                    {Array.from(bySport.entries())
+                      .sort((a, b) => b[1].mins - a[1].mins)
+                      .map(([sport, { count, mins }]) => (
+                        <li key={sport}>
+                          <div className="flex items-baseline justify-between gap-2">
+                            <span className="truncate font-medium">{sportLabel(sport)}</span>
+                            <span className="shrink-0 text-xs tabular-nums text-muted-foreground">
+                              {count} × {minutesToHm(mins)}
+                            </span>
+                          </div>
+                        </li>
+                      ))}
+                  </ul>
+                  <div className="mt-3 flex items-baseline justify-between border-t pt-2 text-sm">
+                    <span className="font-bold uppercase tracking-wider text-muted-foreground text-[10px]">
+                      Total
+                    </span>
+                    <span className="font-bold tabular-nums">
+                      {Array.from(bySport.values()).reduce((a, b) => a + b.count, 0)} sessions ·{" "}
+                      {minutesToHm(Array.from(bySport.values()).reduce((a, b) => a + b.mins, 0))}
+                    </span>
+                  </div>
+                </>
               )}
             </CardContent>
           </Card>
