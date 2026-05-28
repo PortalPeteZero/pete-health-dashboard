@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
+import { CalendarDays, CalendarRange } from "lucide-react";
 import "./globals.css";
 import { NavTabs } from "@/components/nav-tabs";
 import { ServiceWorkerRegistrar } from "@/components/sw-register";
@@ -75,6 +76,36 @@ export default function RootLayout({
             <NavTabs items={items} />
           </div>
         </header>
+
+        {/* Big jump-to-now nav row — always visible directly under the header */}
+        <div className="border-b border-border/60 bg-gradient-to-b from-background/50 to-background">
+          <div className="mx-auto flex w-full max-w-6xl gap-3 px-4 py-4">
+            <Link
+              href={`/training/${latest}`}
+              className="group flex flex-1 items-center gap-3 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 px-5 py-4 text-white shadow-md transition hover:shadow-lg hover:from-emerald-600 hover:to-teal-700 active:scale-[0.98]"
+            >
+              <CalendarDays className="h-6 w-6 shrink-0" />
+              <div className="leading-tight">
+                <div className="text-[10px] font-bold uppercase tracking-[0.16em] opacity-80">
+                  Jump to
+                </div>
+                <div className="text-xl font-extrabold tracking-tight">Today</div>
+              </div>
+            </Link>
+            <Link
+              href={`/week/${week}`}
+              className="group flex flex-1 items-center gap-3 rounded-2xl bg-gradient-to-br from-sky-500 to-blue-600 px-5 py-4 text-white shadow-md transition hover:shadow-lg hover:from-sky-600 hover:to-blue-700 active:scale-[0.98]"
+            >
+              <CalendarRange className="h-6 w-6 shrink-0" />
+              <div className="leading-tight">
+                <div className="text-[10px] font-bold uppercase tracking-[0.16em] opacity-80">
+                  Jump to
+                </div>
+                <div className="text-xl font-extrabold tracking-tight">This Week</div>
+              </div>
+            </Link>
+          </div>
+        </div>
 
         <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:py-10">
           {children}
