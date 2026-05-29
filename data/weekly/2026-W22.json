@@ -19,40 +19,40 @@
   "training_rollup": {
     "iso_week": "2026-W22",
     "days_with_data": 5,
-    "activity_count": 5,
+    "activity_count": 6,
     "duration_min_by_sport": {
       "lap_swimming": 69,
       "running": 60,
-      "indoor_cycling": 35,
+      "indoor_cycling": 97,
       "open_water_swimming": 42
     },
     "distance_km_by_sport": {
       "lap_swimming": 2.0,
       "running": 8.1,
-      "indoor_cycling": 12.51,
+      "indoor_cycling": 34.52,
       "open_water_swimming": 1.61
     },
     "longest_session_min_by_sport": {
       "lap_swimming": 69,
       "running": 30,
-      "indoor_cycling": 35,
+      "indoor_cycling": 62,
       "open_water_swimming": 42
     },
-    "total_training_load": 233.7,
+    "total_training_load": 267.8,
     "hr_time_by_zone": {
-      "z1": 6682,
+      "z1": 7782,
       "z2": 1442,
       "z3": 23,
       "z4": 0,
       "z5": 0
     },
-    "z2_percent": 17.7,
+    "z2_percent": 15.6,
     "aerobic_effect_distribution": {
-      "AEROBIC_BASE": 4,
+      "AEROBIC_BASE": 5,
       "RECOVERY": 1
     },
-    "intensity_min_moderate": 29,
-    "intensity_min_vigorous": 20,
+    "intensity_min_moderate": 53,
+    "intensity_min_vigorous": 54,
     "acwr_avg": 1.2,
     "acwr_count": 5,
     "status_phrases": [
