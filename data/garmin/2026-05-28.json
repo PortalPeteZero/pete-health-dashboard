@@ -41,27 +41,27 @@
     "feedback_phrase": "HRV_BALANCED_6"
   },
   "body_battery": {
-    "charged": 50,
-    "drained": 39,
+    "charged": 55,
+    "drained": 60,
     "highest": null,
     "lowest": null
   },
   "training_readiness": {
-    "score": 56,
-    "level": "MODERATE",
-    "feedback_short": "BALANCE_STRESS_AND_RECOVERY",
-    "feedback_long": "MOD_RT_LOW_SS_MOD_STRESS_HISTORY_NEG"
+    "score": 44,
+    "level": "LOW",
+    "feedback_short": "FIND_TIME_TO_RELAX",
+    "feedback_long": "LOW_RT_MOD_OR_LOW_SS_MOD_STRESS_HISTORY_NEG"
   },
   "daily": {
-    "steps": 9010,
+    "steps": 10226,
     "step_goal": 3560,
     "resting_hr": 56,
     "max_hr": 152,
-    "stress_avg": 32,
+    "stress_avg": 42,
     "floors": 24.47375,
-    "distance_m": 9480,
-    "active_kcal": 717.0,
-    "total_kcal": 2150.0,
+    "distance_m": 10476,
+    "active_kcal": 921.0,
+    "total_kcal": 3031.0,
     "intensity_min_moderate": 16,
     "intensity_min_vigorous": 0,
     "vo2_max": null
@@ -69,26 +69,26 @@
   "training": {
     "status_int": 7,
     "status_label": "Overreaching",
-    "status_phrase": "PRODUCTIVE_3",
+    "status_phrase": "PRODUCTIVE_9",
     "fitness_trend": 3,
     "primary_sport": "RUNNING",
     "since_date": "2026-05-26",
-    "acute_load": 210,
-    "chronic_load": 176,
-    "acwr_ratio": 1.1,
-    "acwr_status": "OPTIMAL",
-    "acwr_percent": 47,
-    "load_tunnel_min": 140.8,
-    "load_tunnel_max": 264.0,
+    "acute_load": 302,
+    "chronic_load": 190,
+    "acwr_ratio": 1.5,
+    "acwr_status": "HIGH",
+    "acwr_percent": 66,
+    "load_tunnel_min": 152.0,
+    "load_tunnel_max": 285.0,
     "vo2_max": 40.9,
     "vo2_max_date": "2026-05-28",
     "fitness_age": null,
     "race_predictions": {
-      "calendar_date": "2026-05-28",
-      "time_5k_sec": 1838,
-      "time_10k_sec": 3992,
-      "time_half_marathon_sec": 9339,
-      "time_marathon_sec": 21497
+      "calendar_date": "2026-05-29",
+      "time_5k_sec": 1840,
+      "time_10k_sec": 3995,
+      "time_half_marathon_sec": 9345,
+      "time_marathon_sec": 21510
     }
   },
   "activities": [
