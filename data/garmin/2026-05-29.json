@@ -2,7 +2,22 @@
   "date": "2026-05-29",
   "day_of_week": "Friday",
   "recovery_query_date": "2026-05-29",
-  "journal": null,
+  "journal": {
+    "date": "2026-05-29",
+    "exists": true,
+    "frontmatter": {
+      "type": "pf-journal",
+      "date": "2026-05-29",
+      "day_of_week": "Friday",
+      "tags": [
+        "passion-fit",
+        "journal",
+        "framework",
+        "hf-matrix"
+      ]
+    },
+    "body": "# Journal, Friday, 29 May 2026\n\n## Recovery (Garmin, last night)\n\n- Sleep score **65 FAIR**, total **6h 39m** (drop from 79 the night before).\n- HRV **38** last night (weekly avg unchanged at BALANCED).\n- RHR **59**.\n\nSofter night than 28 May. Signed off ~21:36 the night before. Today's readiness shifted from 50 MODERATE on the morning pull to 36 LOW by the 17:00 pull \u2014 busy day, lots of context-switching.\n\n## IPSATIVE goals\n\n- **Yesterday's micro-goal**: delegation done before lunch + worked a priority list rather than reacting.\n- **Clean Y/N: Yes.** Delegated Sue Owens on JWR P11D, chased Andy on Soldo notes + receipts, drafted the Freya gala CTA for Pete to post. Soldo audit took longer than it should have but the priority discipline held.\n\n- **Tonight's commitment**: working late to bank tomorrow morning for me + family time before Sunday's flight.\n\n- **Tomorrow's micro-goal**: make the most of the time Michaela is out. Do work stuff while she's not home so the evening from 5pm \u2014 when she gets in \u2014 is clean switch-off time.\n- **Clean Y/N tomorrow evening**: did I switch off at 5pm when Michaela got home?\n\n## Commitment Continuum, today's position\n\n**Committed.** Up against it but prioritised well, still got training in, owned the day. A lot to do with limited time, and even with priority discipline I'm struggling to get everything done. Reluctance would've been to skip training or hand off too much \u2014 I did neither.\n\n## Ownership\n\nDefo owned the day. Out on leak detection in the morning AND prepped Sygma (Soldo audit running into evening). Working late tonight is a conscious choice to give myself a clean Saturday morning, not a default. The pressure I'm under is real: leaving Lanza, leaving CD this week, prepping Sygma all at the same time.\n\n## Control the Controllables\n\nDefo controlled what was mine to control. Remained focused on prioritising. The time-crunch isn't fully controllable \u2014 that's the situation \u2014 but the response to it was clean.\n\n## HF Matrix, today's position\n\n**HIGH FUNCTIONING.** Great first half of the day, prioritised well, still trained, owned what was mine. Energy lower into the evening (readiness dropped to 36 LOW) and the choice to work late tonight is deliberate, not drift.\n\n## One lesson for tomorrow\n\n**Make the most of the time Michaela is out. Do work stuff during this time so in the evening I can switch off at 5pm. That's the goal for tomorrow as she gets home at 5pm.**\n\n## Cross-links\n\n- Garmin day: [[Personal/health/garmin/2026-05-29]]\n- Today's training: indoor cycling 62m, comfortable / controlled blocks. Feedback already logged: [[Personal/passion-fit/coaching/feedback/2026-05-29]]"
+  },
   "signoff": {
     "detected": "20:42",
     "detected_iso": "2026-05-28T20:42:57.949723+01:00",
