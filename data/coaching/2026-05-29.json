@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "format_version": 2,
+  "date": "2026-05-29",
+  "garmin_tracked": true,
+  "pending_garmin_backfill": false,
+  "entries": [
+    {
+      "time": "05:58",
+      "garmin_activity_id": 23052007181,
+      "activity_name": "Indoor Cycling",
+      "sport": "cycling",
+      "session_type": "intervals",
+      "distance_km": 22.01,
+      "duration_min": 63,
+      "avg_hr": 110,
+      "max_hr": 122,
+      "avg_power_w": 111,
+      "avg_cadence_rpm": 66,
+      "feedback_text": "I tailored the session to suit where I am at this moment in time, rather than using critical for the 7 and 3 minute blocks, I chose comfortable for the 7 mins and controlled for the 3 mins. Intensity based on leg feel rather than my cv side, as you can see in the data HR low for the intensity, its conditioning in the legs thats the problem again now, but within expectations.\n\nStill getting used to the TT bike on the trainer and getting comfortable again is a challenge, so not settled and a bit twitchy and moving constantly between base bars and aero bars.\n\nI did an hour which is more than I planned so i am pleased with that, every interval felt in control. It was more than I could have asked for so i am banking it as a win for today.\n\nThe good thing is how I feel now, jsut had a shower, feel energised, legs feel good and feel ready for the day.",
+      "headline": "Indoor Cycling, 1:02:49\navg power 111W, HR 110/122, cad 66",
+      "notes_tags": ["tt-bike", "indoor-turbo", "leg-conditioning", "tailored-from-critical", "comfortable-controlled"],
+      "sent_via": "xhale"
+    }
+  ]
+}
