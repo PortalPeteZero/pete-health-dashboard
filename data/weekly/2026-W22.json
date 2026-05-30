@@ -19,18 +19,18 @@
   "training_rollup": {
     "iso_week": "2026-W22",
     "days_with_data": 6,
-    "activity_count": 6,
+    "activity_count": 8,
     "duration_min_by_sport": {
       "lap_swimming": 69,
-      "running": 60,
+      "running": 90,
       "indoor_cycling": 97,
-      "open_water_swimming": 42
+      "open_water_swimming": 72
     },
     "distance_km_by_sport": {
       "lap_swimming": 2.0,
-      "running": 8.1,
+      "running": 12.34,
       "indoor_cycling": 34.52,
-      "open_water_swimming": 1.61
+      "open_water_swimming": 2.99
     },
     "longest_session_min_by_sport": {
       "lap_swimming": 69,
@@ -38,22 +38,22 @@
       "indoor_cycling": 62,
       "open_water_swimming": 42
     },
-    "total_training_load": 267.8,
+    "total_training_load": 403.9,
     "hr_time_by_zone": {
-      "z1": 7782,
-      "z2": 1442,
+      "z1": 10561,
+      "z2": 2121,
       "z3": 23,
       "z4": 0,
       "z5": 0
     },
-    "z2_percent": 15.6,
+    "z2_percent": 16.7,
     "aerobic_effect_distribution": {
-      "AEROBIC_BASE": 5,
+      "AEROBIC_BASE": 7,
       "RECOVERY": 1
     },
-    "intensity_min_moderate": 53,
+    "intensity_min_moderate": 61,
     "intensity_min_vigorous": 54,
-    "acwr_avg": 1.23,
+    "acwr_avg": 1.33,
     "acwr_count": 6,
     "status_phrases": [
       "MAINTAINING_2",
