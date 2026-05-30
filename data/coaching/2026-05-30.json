@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-30",
+  "garmin_tracked": true,
+  "pending_garmin_backfill": false,
+  "entries": [
+    {
+      "time": "08:54",
+      "garmin_activity_id": 23066042222,
+      "activity_name": "Open Water Swim",
+      "sport": "swimming",
+      "session_type": "easy",
+      "distance_km": 1.38,
+      "duration_min": 31,
+      "avg_hr": 131,
+      "max_hr": 148,
+      "feedback_text": "Simple group swim, we spent 30 mins, no joke .. convincing each other to get in, then not to get in, full on debate. I don't think any of us were actually feeling it this morning, weather a bit crappy.\n\nEventually, with much complaining, we got in, we then bobbed about for another 10 minutes, taking the piss out of each other until Tracey finally had enough, told us off and made us swim.\n\nWas the usual Saturday morning buoy and back. My form felt good, and once again I focused on the eye line and the crane. I am also now really becoming conscious of hip-driven rotation.\n\nWe had a meeting at the buoy for a while. Unfortunately, when we got in the water, Lee was only in buoyancy shorts, so I took the opportunity to splash cold water right up his back and make him scream. I knew the instant I did it he was plotting revenge…\n\nHe was hanging around far too much at the buoy, so I set off and got a shift on, knowing what was coming! He soon caught me up, though, grabbed both ankles and torpedoed me underwater! All good practice for a race start, though.\n\nMade it back with no further fighting.\n\nSorry, not very serious feedback, but not a very serious session, really, but one that I needed, it was good fun.",
+      "headline": "Open Water Swim — 1.38 km in 30:48 — avg pace 2:14/100m — avg HR 131 / max 148",
+      "notes_tags": ["group", "fun", "hip-rotation-focus", "buoy-and-back", "race-start-practice"],
+      "sent_via": "xhale"
+    }
+  ]
+}
