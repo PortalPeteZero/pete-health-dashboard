@@ -85,10 +85,10 @@
     "fitness_age": null,
     "race_predictions": {
       "calendar_date": "2026-05-30",
-      "time_5k_sec": 1842,
-      "time_10k_sec": 3997,
-      "time_half_marathon_sec": 9352,
-      "time_marathon_sec": 21523
+      "time_5k_sec": 1831,
+      "time_10k_sec": 3971,
+      "time_half_marathon_sec": 9259,
+      "time_marathon_sec": 21253
     }
   },
   "activities": [
