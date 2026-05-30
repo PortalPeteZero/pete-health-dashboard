@@ -42,7 +42,7 @@
   },
   "body_battery": {
     "charged": 29,
-    "drained": 16,
+    "drained": 35,
     "highest": null,
     "lowest": null
   },
@@ -53,15 +53,15 @@
     "feedback_long": "LOW_RT_MOD_OR_LOW_SS_MOD_STRESS_HISTORY_NEG"
   },
   "daily": {
-    "steps": 3558,
+    "steps": 4579,
     "step_goal": 3560,
     "resting_hr": 59,
     "max_hr": 132,
-    "stress_avg": 37,
-    "floors": 2.0,
-    "distance_m": 24926,
-    "active_kcal": 526.0,
-    "total_kcal": 1837.0,
+    "stress_avg": 47,
+    "floors": 3.0,
+    "distance_m": 25763,
+    "active_kcal": 558.0,
+    "total_kcal": 2668.0,
     "intensity_min_moderate": 24,
     "intensity_min_vigorous": 34,
     "vo2_max": null
@@ -84,11 +84,11 @@
     "vo2_max_date": "2026-05-28",
     "fitness_age": null,
     "race_predictions": {
-      "calendar_date": "2026-05-29",
-      "time_5k_sec": 1840,
-      "time_10k_sec": 3995,
-      "time_half_marathon_sec": 9345,
-      "time_marathon_sec": 21510
+      "calendar_date": "2026-05-30",
+      "time_5k_sec": 1842,
+      "time_10k_sec": 3997,
+      "time_half_marathon_sec": 9352,
+      "time_marathon_sec": 21523
     }
   },
   "activities": [
