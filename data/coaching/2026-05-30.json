@@ -18,6 +18,21 @@
       "headline": "Open Water Swim — 1.38 km in 30:48 — avg pace 2:14/100m — avg HR 131 / max 148",
       "notes_tags": ["group", "fun", "hip-rotation-focus", "buoy-and-back", "race-start-practice"],
       "sent_via": "xhale"
+    },
+    {
+      "time": "14:07",
+      "garmin_activity_id": 23068058339,
+      "activity_name": "Yaiza Running",
+      "sport": "running",
+      "session_type": "controlled",
+      "distance_km": 4.24,
+      "duration_min": 30,
+      "avg_hr": 135,
+      "max_hr": 154,
+      "feedback_text": "It took some discipline to stick to another 30 minutes today, but I reminded myself the plan was working, I had pretty much stuck it all week, let's trust the plan and trust the process. But I did go just a little harder, with 2 days rest coming up (if you can call it that) I felt it safe.\n\nI did 1km chilled to warm up then completed the rest at a controlled pace, maybe slightly upper controlled, it did feel challenging on my legs but actually my legs got loads better at around 20 mins in! Finished feeling strong, not tanked, not gassed, legs feel like they have worked but in a good way.\n\nI am pleased with this today.",
+      "headline": "Yaiza Running — 4.24 km in 30:07 — avg pace 7:06/km — avg HR 135 / max 154",
+      "notes_tags": ["trust-the-plan", "week-stuck-it", "pre-rest-bump", "legs-loosened-mid-session", "finished-strong"],
+      "sent_via": "xhale"
     }
   ]
 }
