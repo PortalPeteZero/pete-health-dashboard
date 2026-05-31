@@ -2,10 +2,25 @@
   "date": "2026-05-30",
   "day_of_week": "Saturday",
   "recovery_query_date": "2026-05-30",
-  "journal": null,
+  "journal": {
+    "date": "2026-05-30",
+    "exists": true,
+    "frontmatter": {
+      "type": "pf-journal",
+      "date": "2026-05-30",
+      "day_of_week": "Saturday",
+      "tags": [
+        "passion-fit",
+        "journal",
+        "framework",
+        "hf-matrix"
+      ]
+    },
+    "body": "# Journal, Saturday, 30 May 2026\n\n## Recovery (Garmin, last night)\n\n- Sleep score **77 FAIR**, total **7h 17m** (up from 6h 39m the night before).\n- HRV **41** last night (weekly 42, **UNBALANCED**).\n- RHR **56**.\n- Training readiness **16 POOR** (POOR_HRV_UNBALANCED).\n\nFelt ok. Body just catching up from the hardest training week in a long while. The numbers underneath are doing the work even when the sleep score looks fine.\n\n## Goals\n\n- **Yesterday's micro-goal**: do work stuff while Michaela was out so I could switch off cleanly at 5pm when she got home.\n- **Clean Y/N: Yes.** Was done for when she got back. Banking another quick 20 mins now to finish off before tomorrow's flight, by choice rather than drift.\n\n- **Tomorrow's micro-goals (two)**:\n  1. Treat the flight as proper down-time. TV, chill, no work creep.\n  2. Complete the Xhale weekly feedback in the morning, ideally at the airport while waiting, or before leaving if there is time.\n\n## Commitment Continuum, today's position\n\n**Committed.** Proud of the week so far. Real shift in how it felt, from being pushed by the plan to wanting to do it. Today was the last training day of the week and I just wanted to finish it off properly. That want-to is the Committed to Compelled progression starting to land.\n\n## Ownership\n\nQuiet ownership rather than dramatic. Got through the day as planned, trained morning and afternoon, worked in between, got most of what I needed done. No big externalisation, no big story. Just did the day.\n\n## Control the Controllables\n\nProbably wasted 90 to 120 minutes on a friend's website doing SEO work for him. Crucial for him, but a whim for me. Not on the must-do list, fell into want-to-do. No real harm done and helped a friend, so hard to call if it was right or not. The win is I can recognise it looking back and need to be mindful of it.\n\n## HF Matrix, today's position\n\n**HIGH FUNCTIONING.** Body underneath felt the week (readiness 16 POOR) but two trainings banked, switched off when I said I would, banking work cleanly. Energy and head both in the top-right.\n\n## One lesson for tomorrow\n\n**Building on 25 May (urgent is not direction): today the must-do discipline held, but a 2-hour want-to-do (friend's site SEO) still slipped through unchallenged. The progression is recognising it in retrospect. The next step is catching the whim in the moment, not on the way home. Tomorrow's flight is the test, it is explicitly down-time and the whim will try to make it work-time.**\n\n## Cross-links\n\n- Garmin day: [[Personal/health/garmin/2026-05-30]]\n- Today's training feedback: [[Personal/passion-fit/coaching/feedback/2026-05-30]]\n- Related earlier lesson this week: [[Personal/passion-fit/journal/2026-05-25]] (urgent is not direction)"
+  },
   "signoff": {
-    "detected": "23:39",
-    "detected_iso": "2026-05-29T23:39:17.550320+01:00",
+    "detected": "22:53",
+    "detected_iso": "2026-05-29T22:53:44.479067+01:00",
     "confirmed": null,
     "source": "claude-session-activity"
   },
@@ -27,7 +42,7 @@
   },
   "body_battery": {
     "charged": 38,
-    "drained": 27,
+    "drained": 37,
     "highest": null,
     "lowest": null
   },
@@ -38,15 +53,15 @@
     "feedback_long": "POOR_HRV_UNBALANCED"
   },
   "daily": {
-    "steps": 8086,
+    "steps": 9404,
     "step_goal": 3560,
     "resting_hr": 56,
     "max_hr": 150,
     "stress_avg": 32,
-    "floors": 17.0,
-    "distance_m": 8541,
-    "active_kcal": 867.0,
-    "total_kcal": 2285.0,
+    "floors": 18.48688,
+    "distance_m": 9621,
+    "active_kcal": 944.0,
+    "total_kcal": 3054.0,
     "intensity_min_moderate": 11,
     "intensity_min_vigorous": 0,
     "vo2_max": null
@@ -69,11 +84,11 @@
     "vo2_max_date": "2026-05-30",
     "fitness_age": null,
     "race_predictions": {
-      "calendar_date": "2026-05-30",
-      "time_5k_sec": 1831,
-      "time_10k_sec": 3971,
-      "time_half_marathon_sec": 9259,
-      "time_marathon_sec": 21253
+      "calendar_date": "2026-05-31",
+      "time_5k_sec": 1832,
+      "time_10k_sec": 3973,
+      "time_half_marathon_sec": 9264,
+      "time_marathon_sec": 21261
     }
   },
   "activities": [
