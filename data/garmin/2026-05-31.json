@@ -4,8 +4,8 @@
   "recovery_query_date": "2026-05-31",
   "journal": null,
   "signoff": {
-    "detected": "23:03",
-    "detected_iso": "2026-05-30T23:03:34.474394+01:00",
+    "detected": "21:28",
+    "detected_iso": "2026-05-30T21:28:59.255938+01:00",
     "confirmed": "18:00",
     "source": "claude-session-activity"
   },
@@ -26,8 +26,8 @@
     "feedback_phrase": "HRV_UNBALANCED_8"
   },
   "body_battery": {
-    "charged": null,
-    "drained": null,
+    "charged": 0,
+    "drained": 15,
     "highest": null,
     "lowest": null
   },
@@ -38,15 +38,15 @@
     "feedback_long": "LOW_HRV_UNBALANCED"
   },
   "daily": {
-    "steps": null,
+    "steps": 653,
     "step_goal": 3560,
-    "resting_hr": null,
-    "max_hr": null,
-    "stress_avg": -1,
+    "resting_hr": 61,
+    "max_hr": 96,
+    "stress_avg": 49,
     "floors": 0.0,
-    "distance_m": null,
-    "active_kcal": 0.0,
-    "total_kcal": 574.0,
+    "distance_m": 535,
+    "active_kcal": 10.0,
+    "total_kcal": 889.0,
     "intensity_min_moderate": 0,
     "intensity_min_vigorous": 0,
     "vo2_max": null
