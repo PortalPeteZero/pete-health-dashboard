@@ -6,7 +6,7 @@
   "signoff": {
     "detected": "23:03",
     "detected_iso": "2026-05-30T23:03:34.474394+01:00",
-    "confirmed": null,
+    "confirmed": "18:00",
     "source": "claude-session-activity"
   },
   "sleep": {
